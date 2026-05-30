@@ -1,1436 +1,1426 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2870
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;\red46\green49\blue51;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\cssrgb\c23529\c25098\c26275;\cssrgb\c100000\c100000\c100000;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww13180\viewh15060\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição — Sports Brasil</title>
+  <style>
+    /* ===== TEMAS ===== */
+    :root {
+      --orange: #C8723A;
+      --orange-dark: #a85c2c;
+    }
+    [data-theme="dark"] {
+      --bg: #0d0d0d;
+      --card: #1a1a1a;
+      --card2: #242424;
+      --border: #2a2a2a;
+      --text: #f0f0f0;
+      --text-muted: #888;
+      --text-ph: #555;
+      --input-bg: #1e1e1e;
+      --input-border: #2a2a2a;
+      --label: #C8723A;
+      --label-opt: #888;
+      --sec-border: #222;
+      --step-off-bg: #2a2a2a;
+      --step-off-c: #666;
+      --btn-back-border: #333;
+      --btn-back-c: #888;
+      --pill-bg: #1e1e1e;
+      --pill-border: #333;
+      --pill-c: #666;
+      --upload-border: #3a3a3a;
+      --upload-icon-c: #666;
+      --comp-bg: #1a1a1a;
+      --add-comp-border: #333;
+      --footer-border: #1a1a1a;
+      --toggle-bg: rgba(0,0,0,0.25);
+      --toggle-c: rgba(255,255,255,0.85);
+      --overlay: rgba(0,0,0,0.75);
+      --admin-bg: #161616;
+      --badge-bg: #2a2a2a;
+      --badge-c: #888;
+      --success-bg: #0d0d0d;
+      --step-line: #2a2a2a;
+    }
+    [data-theme="light"] {
+      --bg: #f2f2f2;
+      --card: #ffffff;
+      --card2: #f7f7f7;
+      --border: #e2e2e2;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --text-ph: #bbb;
+      --input-bg: #ffffff;
+      --input-border: #ddd;
+      --label: #C8723A;
+      --label-opt: #777;
+      --sec-border: #eee;
+      --step-off-bg: #e5e5e5;
+      --step-off-c: #aaa;
+      --btn-back-border: #ddd;
+      --btn-back-c: #888;
+      --pill-bg: #f0f0f0;
+      --pill-border: #ddd;
+      --pill-c: #999;
+      --upload-border: #ccc;
+      --upload-icon-c: #bbb;
+      --comp-bg: #f8f8f8;
+      --add-comp-border: #ccc;
+      --footer-border: #eee;
+      --toggle-bg: rgba(0,0,0,0.18);
+      --toggle-c: rgba(255,255,255,0.9);
+      --overlay: rgba(0,0,0,0.55);
+      --admin-bg: #ffffff;
+      --badge-bg: #ebebeb;
+      --badge-c: #777;
+      --success-bg: #f2f2f2;
+      --step-line: #e0e0e0;
+    }
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="pt-BR">\
-<head>\
-  <meta charset="UTF-8">\
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-  <title>Inscri\'e7\'e3o \'97 Sports Brasil</title>\
-  <style>\
-    /* ===== TEMAS ===== */\
-    :root \{\
-      --orange: #C8723A;\
-      --orange-dark: #a85c2c;\
-    \}\
-    [data-theme="dark"] \{\
-      --bg: #0d0d0d;\
-      --card: #1a1a1a;\
-      --card2: #242424;\
-      --border: #2a2a2a;\
-      --text: #f0f0f0;\
-      --text-muted: #888;\
-      --text-ph: #555;\
-      --input-bg: #1e1e1e;\
-      --input-border: #2a2a2a;\
-      --label: #C8723A;\
-      --label-opt: #888;\
-      --sec-border: #222;\
-      --step-off-bg: #2a2a2a;\
-      --step-off-c: #666;\
-      --btn-back-border: #333;\
-      --btn-back-c: #888;\
-      --pill-bg: #1e1e1e;\
-      --pill-border: #333;\
-      --pill-c: #666;\
-      --upload-border: #3a3a3a;\
-      --upload-icon-c: #666;\
-      --comp-bg: #1a1a1a;\
-      --add-comp-border: #333;\
-      --footer-border: #1a1a1a;\
-      --toggle-bg: rgba(0,0,0,0.25);\
-      --toggle-c: rgba(255,255,255,0.85);\
-      --overlay: rgba(0,0,0,0.75);\
-      --admin-bg: #161616;\
-      --badge-bg: #2a2a2a;\
-      --badge-c: #888;\
-      --success-bg: #0d0d0d;\
-      --step-line: #2a2a2a;\
-    \}\
-    [data-theme="light"] \{\
-      --bg: #f2f2f2;\
-      --card: #ffffff;\
-      --card2: #f7f7f7;\
-      --border: #e2e2e2;\
-      --text: #1a1a1a;\
-      --text-muted: #666;\
-      --text-ph: #bbb;\
-      --input-bg: #ffffff;\
-      --input-border: #ddd;\
-      --label: #C8723A;\
-      --label-opt: #777;\
-      --sec-border: #eee;\
-      --step-off-bg: #e5e5e5;\
-      --step-off-c: #aaa;\
-      --btn-back-border: #ddd;\
-      --btn-back-c: #888;\
-      --pill-bg: #f0f0f0;\
-      --pill-border: #ddd;\
-      --pill-c: #999;\
-      --upload-border: #ccc;\
-      --upload-icon-c: #bbb;\
-      --comp-bg: #f8f8f8;\
-      --add-comp-border: #ccc;\
-      --footer-border: #eee;\
-      --toggle-bg: rgba(0,0,0,0.18);\
-      --toggle-c: rgba(255,255,255,0.9);\
-      --overlay: rgba(0,0,0,0.55);\
-      --admin-bg: #ffffff;\
-      --badge-bg: #ebebeb;\
-      --badge-c: #777;\
-      --success-bg: #f2f2f2;\
-      --step-line: #e0e0e0;\
-    \}\
-\
-    /* ===== RESET ===== */\
-    *, *::before, *::after \{ box-sizing: border-box; margin: 0; padding: 0; \}\
-\
-    body \{\
-      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\
-      background: var(--bg);\
-      color: var(--text);\
-      min-height: 100vh;\
-      transition: background .25s, color .25s;\
-    \}\
-\
-    /* ===== WRAPPER ===== */\
-    .wrap \{\
-      max-width: 660px;\
-      margin: 0 auto;\
-      padding-bottom: 48px;\
-    \}\
-\
-    /* ===== HEADER ===== */\
-    .header \{\
-      background: var(--orange);\
-      padding: 28px 24px 22px;\
-      text-align: center;\
-      position: relative;\
-    \}\
-\
-    /* Logo \'97 substitua o src pelo caminho real da imagem */\
-    .header-logo \{\
-      max-width: 240px;\
-      max-height: 80px;\
-      width: auto;\
-      height: auto;\
-      margin-bottom: 18px;\
-      display: block;\
-      margin-left: auto;\
-      margin-right: auto;\
-    \}\
-\
-    /* Fallback caso a imagem n\'e3o carregue */\
-    .header-fallback \{\
-      display: none;\
-      margin-bottom: 18px;\
-    \}\
-    .header-fallback-title \{\
-      font-size: 24px;\
-      font-weight: 800;\
-      color: #fff;\
-      letter-spacing: 4px;\
-      text-transform: uppercase;\
-    \}\
-    .header-fallback-sub \{\
-      font-size: 10px;\
-      color: rgba(255,255,255,0.75);\
-      letter-spacing: 2.5px;\
-      text-transform: uppercase;\
-      margin-top: 4px;\
-    \}\
-\
-    .tournament-box \{\
-      background: rgba(0,0,0,0.22);\
-      border-radius: 12px;\
-      padding: 12px 16px;\
-      text-align: left;\
-    \}\
-    .tournament-name \{\
-      font-size: 15px;\
-      font-weight: 700;\
-      color: #fff;\
-      text-transform: uppercase;\
-      letter-spacing: 0.5px;\
-    \}\
-    .tournament-meta \{\
-      font-size: 13px;\
-      color: rgba(255,255,255,0.82);\
-      margin-top: 4px;\
-    \}\
-\
-    /* Theme toggle */\
-    .theme-toggle \{\
-      position: absolute;\
-      top: 14px;\
-      right: 14px;\
-      background: var(--toggle-bg);\
-      border: none;\
-      border-radius: 20px;\
-      padding: 6px 12px;\
-      cursor: pointer;\
-      font-size: 12px;\
-      color: var(--toggle-c);\
-      font-family: inherit;\
-      display: flex;\
-      align-items: center;\
-      gap: 5px;\
-    \}\
-\
-    /* ===== STEPS ===== */\
-    .steps-bar \{\
-      background: var(--card);\
-      padding: 14px 24px 10px;\
-      border-bottom: 1px solid var(--border);\
-      position: sticky;\
-      top: 0;\
-      z-index: 10;\
-    \}\
-    .steps-row \{\
-      display: flex;\
-      align-items: center;\
-    \}\
-    .step-dot \{\
-      width: 32px;\
-      height: 32px;\
-      border-radius: 50%;\
-      font-size: 13px;\
-      font-weight: 700;\
-      display: flex;\
-      align-items: center;\
-      justify-content: center;\
-      flex-shrink: 0;\
-      cursor: pointer;\
-      transition: background .2s, color .2s;\
-    \}\
-    .step-dot.active  \{ background: var(--orange); color: #fff; \}\
-    .step-dot.done    \{ background: var(--orange); color: #fff; opacity: .55; \}\
-    .step-dot.off     \{ background: var(--step-off-bg); color: var(--step-off-c); \}\
-    .step-line        \{ flex: 1; height: 1px; background: var(--step-line); \}\
-    .steps-labels \{\
-      display: flex;\
-      justify-content: space-between;\
-      margin-top: 6px;\
-    \}\
-    .steps-labels span \{\
-      font-size: 10px;\
-      color: var(--text-muted);\
-      text-transform: uppercase;\
-      letter-spacing: .5px;\
-    \}\
-\
-    /* ===== SECTION ===== */\
-    .section \{\
-      padding: 22px 24px;\
-    \}\
-    .section-title \{\
-      font-size: 12px;\
-      font-weight: 700;\
-      color: var(--orange);\
-      text-transform: uppercase;\
-      letter-spacing: 2px;\
-      margin-bottom: 20px;\
-      padding-bottom: 10px;\
-      border-bottom: 1px solid var(--sec-border);\
-    \}\
-\
-    /* ===== FIELDS ===== */\
-    .fg \{ margin-bottom: 16px; \}\
-    .fg:last-child \{ margin-bottom: 0; \}\
-\
-    .lbl \{\
-      font-size: 11px;\
-      font-weight: 700;\
-      color: var(--label);\
-      text-transform: uppercase;\
-      letter-spacing: 1px;\
-      display: block;\
-      margin-bottom: 6px;\
-    \}\
-    .lbl-opt \{\
-      font-size: 11px;\
-      font-weight: 600;\
-      color: var(--label-opt);\
-      text-transform: uppercase;\
-      letter-spacing: 1px;\
-      display: block;\
-      margin-bottom: 6px;\
-    \}\
-    .req \{ color: #e05a2b; \}\
-\
-    input[type="text"],\
-    input[type="date"],\
-    input[type="email"],\
-    select,\
-    textarea \{\
-      width: 100%;\
-      background: var(--input-bg);\
-      border: 1.5px solid var(--input-border);\
-      border-radius: 10px;\
-      padding: 12px 14px;\
-      font-size: 14px;\
-      color: var(--text);\
-      font-family: inherit;\
-      transition: border-color .2s;\
-      -webkit-appearance: none;\
-      appearance: none;\
-    \}\
-    input:focus, select:focus, textarea:focus \{\
-      outline: none;\
-      border-color: var(--orange);\
-    \}\
-    input::placeholder, textarea::placeholder \{ color: var(--text-ph); \}\
-    textarea \{ resize: vertical; min-height: 90px; line-height: 1.5; \}\
-\
-    .frow \{\
-      display: grid;\
-      grid-template-columns: 1fr 1fr;\
-      gap: 12px;\
-    \}\
-\
-    /* ===== PILLS ===== */\
-    .pills \{ display: flex; gap: 8px; flex-wrap: wrap; \}\
-    .pill \{\
-      padding: 9px 14px;\
-      border-radius: 9px;\
-      font-size: 13px;\
-      font-weight: 600;\
-      cursor: pointer;\
-      border: 1.5px solid var(--pill-border);\
-      background: var(--pill-bg);\
-      color: var(--pill-c);\
-      user-select: none;\
-      transition: all .15s;\
-    \}\
-    .pill.sel \{ background: var(--orange); color: #fff; border-color: var(--orange); \}\
-\
-    /* ===== YES/NO ===== */\
-    .yesno \{ display: flex; gap: 10px; \}\
-    .yesno-btn \{\
-      flex: 1;\
-      padding: 13px;\
-      border-radius: 10px;\
-      border: 1.5px solid var(--pill-border);\
-      background: var(--pill-bg);\
-      color: var(--pill-c);\
-      font-size: 14px;\
-      font-weight: 500;\
-      cursor: pointer;\
-      text-align: center;\
-      transition: all .15s;\
-      font-family: inherit;\
-    \}\
-    .yesno-btn.sel \{ background: var(--orange); color: #fff; border-color: var(--orange); \}\
-\
-    /* ===== UPLOAD ===== */\
-    .upload-zone \{\
-      background: var(--input-bg);\
-      border: 1.5px dashed var(--orange);\
-      border-radius: 10px;\
-      padding: 22px;\
-      text-align: center;\
-      cursor: pointer;\
-      position: relative;\
-      overflow: hidden;\
-      transition: border-color .2s;\
-    \}\
-    .upload-zone.secondary \{ border-color: var(--upload-border); \}\
-    .upload-zone input[type="file"] \{\
-      position: absolute; top: 0; left: 0;\
-      width: 100%; height: 100%;\
-      opacity: 0; cursor: pointer;\
-    \}\
-    .upload-icon \{\
-      font-size: 30px;\
-      color: var(--orange);\
-      margin-bottom: 7px;\
-    \}\
-    .upload-zone.secondary .upload-icon \{ color: var(--upload-icon-c); \}\
-    .upload-text \{ font-size: 13px; color: var(--text-muted); \}\
-    .upload-hint \{ font-size: 11px; color: var(--text-ph); margin-top: 4px; line-height: 1.5; \}\
-    .upload-preview \{\
-      width: 100%;\
-      max-height: 200px;\
-      object-fit: cover;\
-      border-radius: 8px;\
-      display: none;\
-    \}\
-\
-    /* ===== COMPANIONS ===== */\
-    .comp-block \{\
-      background: var(--comp-bg);\
-      border: 1px solid var(--border);\
-      border-radius: 12px;\
-      margin-bottom: 12px;\
-      overflow: hidden;\
-    \}\
-    .comp-hdr \{\
-      padding: 14px 16px;\
-      display: flex;\
-      align-items: center;\
-      justify-content: space-between;\
-      cursor: pointer;\
-      border-bottom: 1px solid var(--border);\
-    \}\
-    .comp-hdr-title \{\
-      font-size: 13px;\
-      font-weight: 700;\
-      color: var(--text);\
-      text-transform: uppercase;\
-      letter-spacing: .5px;\
-    \}\
-    .comp-body \{ padding: 18px 16px; \}\
-\
-    .btn-add-comp \{\
-      width: 100%;\
-      padding: 14px;\
-      background: transparent;\
-      border: 1.5px dashed var(--add-comp-border);\
-      border-radius: 12px;\
-      color: var(--orange);\
-      font-size: 14px;\
-      font-weight: 600;\
-      cursor: pointer;\
-      text-align: center;\
-      margin-bottom: 8px;\
-      font-family: inherit;\
-      transition: opacity .2s;\
-    \}\
-    .btn-add-comp:disabled \{ opacity: .35; cursor: not-allowed; \}\
-\
-    /* ===== BUTTONS ===== */\
-    .btn-row \{ display: flex; gap: 12px; margin-top: 26px; \}\
-\
-    .btn-primary \{\
-      flex: 2;\
-      padding: 16px;\
-      background: var(--orange);\
-      border: none;\
-      border-radius: 12px;\
-      color: #fff;\
-      font-size: 15px;\
-      font-weight: 700;\
-      text-transform: uppercase;\
-      letter-spacing: 1px;\
-      cursor: pointer;\
-      font-family: inherit;\
-      transition: opacity .2s;\
-    \}\
-    .btn-primary:hover \{ opacity: .88; \}\
-    .btn-primary:disabled \{ opacity: .6; cursor: not-allowed; \}\
-\
-    .btn-back \{\
-      flex: 1;\
-      padding: 16px;\
-      background: transparent;\
-      border: 1.5px solid var(--btn-back-border);\
-      border-radius: 12px;\
-      color: var(--btn-back-c);\
-      font-size: 14px;\
-      font-weight: 600;\
-      cursor: pointer;\
-      font-family: inherit;\
-    \}\
-\
-    /* ===== ERROR MSG ===== */\
-    .err \{ font-size: 11px; color: #e05a2b; margin-top: 5px; display: none; \}\
-\
-    /* ===== FOOTER ===== */\
-    .form-footer \{\
-      text-align: center;\
-      padding: 18px 24px 6px;\
-      border-top: 1px solid var(--footer-border);\
-      margin-top: 8px;\
-    \}\
-    .form-footer span \{\
-      font-size: 13px;\
-      color: var(--orange);\
-      font-weight: 600;\
-      letter-spacing: .5px;\
-    \}\
-    .admin-link \{\
-      display: block;\
-      text-align: center;\
-      font-size: 11px;\
-      color: var(--text-muted);\
-      margin-top: 12px;\
-      padding-bottom: 8px;\
-      cursor: pointer;\
-      text-decoration: none;\
-      background: none;\
-      border: none;\
-      font-family: inherit;\
-      width: 100%;\
-    \}\
-\
-    /* ===== SUCCESS ===== */\
-    .success-screen \{\
-      display: none;\
-      text-align: center;\
-      padding: 64px 24px;\
-      background: var(--success-bg);\
-    \}\
-    .success-icon \{\
-      width: 72px; height: 72px;\
-      background: var(--orange);\
-      border-radius: 50%;\
-      display: flex; align-items: center; justify-content: center;\
-      margin: 0 auto 22px;\
-    \}\
-    .success-title \{\
-      font-size: 22px; font-weight: 700;\
-      color: var(--text); margin-bottom: 12px;\
-    \}\
-    .success-sub \{\
-      color: var(--text-muted); font-size: 15px;\
-      line-height: 1.65; max-width: 340px;\
-      margin: 0 auto 28px;\
-    \}\
-    .success-link \{\
-      color: var(--orange); font-size: 14px;\
-      font-weight: 600; text-decoration: none;\
-      cursor: pointer; background: none;\
-      border: none; font-family: inherit;\
-    \}\
-\
-    /* ===== ADMIN OVERLAY ===== */\
-    .admin-overlay \{\
-      display: none;\
-      position: fixed; inset: 0;\
-      background: var(--overlay);\
-      z-index: 200;\
-      align-items: flex-end;\
-      justify-content: center;\
-    \}\
-    .admin-overlay.open \{ display: flex; \}\
-\
-    .admin-sheet \{\
-      background: var(--admin-bg);\
-      border-radius: 20px 20px 0 0;\
-      width: 100%;\
-      max-width: 660px;\
-      max-height: 92vh;\
-      overflow-y: auto;\
-      padding: 24px;\
-    \}\
-    .admin-hdr \{\
-      font-size: 13px;\
-      font-weight: 700;\
-      color: var(--orange);\
-      text-transform: uppercase;\
-      letter-spacing: 2px;\
-      margin-bottom: 20px;\
-      padding-bottom: 14px;\
-      border-bottom: 1px solid var(--border);\
-      display: flex;\
-      align-items: center;\
-      justify-content: space-between;\
-    \}\
-    .admin-close \{\
-      background: none; border: none;\
-      color: var(--text-muted); font-size: 20px;\
-      cursor: pointer; line-height: 1;\
-    \}\
-    .admin-sec-title \{\
-      font-size: 11px; font-weight: 700;\
-      color: var(--text-muted);\
-      text-transform: uppercase; letter-spacing: 1px;\
-      margin-bottom: 14px;\
-    \}\
-\
-    /* Lock */\
-    .lock-wrap \{ text-align: center; padding: 24px 0; \}\
-    .lock-icon \{ font-size: 48px; color: var(--orange); margin-bottom: 14px; \}\
-    .lock-sub  \{ font-size: 14px; color: var(--text-muted); margin-bottom: 20px; \}\
-    .pwd-input \{\
-      width: 100%;\
-      background: var(--input-bg);\
-      border: 1.5px solid var(--input-border);\
-      border-radius: 10px;\
-      padding: 14px;\
-      color: var(--text);\
-      font-size: 26px;\
-      text-align: center;\
-      letter-spacing: 14px;\
-      font-family: inherit;\
-      margin-bottom: 12px;\
-      -webkit-appearance: none;\
-    \}\
-    .pwd-error \{ font-size: 12px; color: #e05a2b; margin-bottom: 10px; display: none; \}\
-\
-    /* Question list */\
-    .q-item \{\
-      background: var(--card2);\
-      border: 1px solid var(--border);\
-      border-radius: 10px;\
-      padding: 12px 14px;\
-      display: flex;\
-      align-items: center;\
-      justify-content: space-between;\
-      margin-bottom: 8px;\
-      gap: 10px;\
-    \}\
-    .q-text \{ font-size: 13px; color: var(--text); flex: 1; \}\
-    .q-actions \{ display: flex; gap: 8px; align-items: center; flex-shrink: 0; \}\
-    .badge \{\
-      font-size: 10px;\
-      background: var(--badge-bg);\
-      color: var(--badge-c);\
-      padding: 3px 8px;\
-      border-radius: 5px;\
-      white-space: nowrap;\
-    \}\
-    .icon-btn \{\
-      background: none; border: none;\
-      cursor: pointer; font-size: 15px;\
-      color: var(--text-muted); padding: 2px 4px;\
-    \}\
-    .btn-add-q \{\
-      width: 100%;\
-      padding: 13px;\
-      background: transparent;\
-      border: 1.5px dashed var(--orange);\
-      border-radius: 10px;\
-      color: var(--orange);\
-      font-size: 13px;\
-      font-weight: 700;\
-      cursor: pointer;\
-      font-family: inherit;\
-      margin-top: 4px;\
-    \}\
-\
-    /* Spinner */\
-    .spinner \{\
-      display: inline-block;\
-      width: 17px; height: 17px;\
-      border: 2px solid rgba(255,255,255,.35);\
-      border-top-color: #fff;\
-      border-radius: 50%;\
-      animation: spin .7s linear infinite;\
-      vertical-align: middle;\
-      margin-right: 7px;\
-    \}\
-    @keyframes spin \{ to \{ transform: rotate(360deg); \} \}\
-\
-    /* ===== RESPONSIVE ===== */\
-    @media (max-width: 480px) \{\
-      .frow \{ grid-template-columns: 1fr; \}\
-      .section \{ padding: 18px 16px; \}\
-      .steps-bar \{ padding: 12px 16px 8px; \}\
-      .header \{ padding: 24px 16px 20px; \}\
-      .header-logo \{ max-width: 180px; \}\
-    \}\
-  </style>\
-</head>\
-\
-<body data-theme="dark">\
-<div class="wrap">\
-\
-  <!-- ===== HEADER ===== -->\
-  <div class="header">\
-    <button class="theme-toggle" onclick="toggleTheme()">\
-      <span id="theme-icon">\uc0\u9728 </span>\
-      <span id="theme-lbl">Modo claro</span>\
-    </button>\
-\
-    <!--\
-      LOGO: substitua o atributo src pelo caminho da imagem.\
-      Voc\'ea pode embutir o logo em base64 ou hospedar no Google Drive com link p\'fablico.\
-      Exemplo com base64: src="data:image/png;base64,XXXXXXXX..."\
-    -->\
-    <img\
-      id="sb-logo"\
-      src="https://drive.google.com/file/d/1yASZbhzw0kV8lcd82A2bt4MyHDHia1oq/preview"\
-      alt="Sports Brasil"\
-      class="header-logo"\
-      onerror="document.getElementById('sb-logo').style.display='none'; document.getElementById('header-fallback').style.display='block';"\
-    />\
-    <div id="header-fallback" class="header-fallback">\
-      <div class="header-fallback-title">SPORTS BRASIL</div>\
-      <div class="header-fallback-sub">TURISMO &amp; EVENTOS</div>\
-    </div>\
-\
-    <div class="tournament-box">\
-      <div class="tournament-name" id="disp-name">World Futsal Championship</div>\
-      <div class="tournament-meta">\uc0\u55357 \u56525  <span id="disp-dest">Orlando, EUA</span> \'b7 <span id="disp-year">2026</span></div>\
-    </div>\
-  </div>\
-\
-  <!-- ===== STEPS BAR ===== -->\
-  <div class="steps-bar">\
-    <div class="steps-row">\
-      <div class="step-dot active" id="dot1" onclick="tryGoStep(1)">1</div>\
-      <div class="step-line"></div>\
-      <div class="step-dot off"    id="dot2" onclick="tryGoStep(2)">2</div>\
-      <div class="step-line"></div>\
-      <div class="step-dot off"    id="dot3" onclick="tryGoStep(3)">3</div>\
-    </div>\
-    <div class="steps-labels">\
-      <span>Atleta</span>\
-      <span>Acompanhantes</span>\
-      <span>Resp. Financeiro</span>\
-    </div>\
-  </div>\
-\
-  <!-- ===== STEP 1 \'97 ATLETA ===== -->\
-  <div id="step1">\
-    <div class="section">\
-      <div class="section-title">Dados do Atleta</div>\
-\
-      <div class="fg">\
-        <label class="lbl">Nome Completo <span class="req">*</span></label>\
-        <input type="text" id="a-nome" placeholder="Nome completo do atleta">\
-        <div class="err" id="e-nome">Campo obrigat\'f3rio</div>\
-      </div>\
-\
-      <div class="frow fg">\
-        <div>\
-          <label class="lbl">Data de Nascimento <span class="req">*</span></label>\
-          <input type="date" id="a-nasc">\
-          <div class="err" id="e-nasc">Campo obrigat\'f3rio</div>\
-        </div>\
-        <div>\
-          <label class="lbl">CPF <span class="req">*</span></label>\
-          <input type="text" id="a-cpf" placeholder="000.000.000-00" maxlength="14" oninput="maskCPF(this)">\
-          <div class="err" id="e-cpf">Campo obrigat\'f3rio</div>\
-        </div>\
-      </div>\
-\
-      <div class="fg">\
-        <label class="lbl">RG <span class="req">*</span></label>\
-        <input type="text" id="a-rg" placeholder="N\'famero do RG">\
-        <div class="err" id="e-rg">Campo obrigat\'f3rio</div>\
-      </div>\
-\
-      <div class="fg">\
-        <label class="lbl-opt">Instagram do Atleta</label>\
-        <input type="text" id="a-insta" placeholder="@usuario">\
-      </div>\
-\
-      <div class="fg">\
-        <label class="lbl">Tamanho de Uniforme <span class="req">*</span></label>\
-        <div class="pills" id="unif-pills">\
-          <div class="pill" onclick="selPill('unif',this,'a-unif')">10</div>\
-          <div class="pill" onclick="selPill('unif',this,'a-unif')">12</div>\
-          <div class="pill" onclick="selPill('unif',this,'a-unif')">14</div>\
-          <div class="pill" onclick="selPill('unif',this,'a-unif')">P</div>\
-          <div class="pill" onclick="selPill('unif',this,'a-unif')">M</div>\
-          <div class="pill" onclick="selPill('unif',this,'a-unif')">G</div>\
-          <div class="pill" onclick="selPill('unif',this,'a-unif')">GG</div>\
-        </div>\
-        <input type="hidden" id="a-unif">\
-        <div class="err" id="e-unif">Selecione um tamanho</div>\
-      </div>\
-\
-      <!-- FOTO DE ROSTO -->\
-      <div class="fg">\
-        <label class="lbl">Foto de Rosto <span class="req">*</span></label>\
-        <div class="upload-zone" id="zone-rosto" onclick="document.getElementById('file-rosto').click()">\
-          <input type="file" id="file-rosto" accept="image/*" style="display:none" onchange="handlePhoto(this,'rosto')">\
-          <img class="upload-preview" id="prev-rosto" alt="Foto de rosto">\
-          <div id="ph-rosto">\
-            <div class="upload-icon">\uc0\u55357 \u56420 </div>\
-            <div class="upload-text">Toque para adicionar foto de rosto</div>\
-            <div class="upload-hint">Foto de rosto clara e recente \'b7 JPG ou PNG \'b7 m\'e1x. 5MB</div>\
-          </div>\
-        </div>\
-        <div class="err" id="e-rosto">Adicione a foto de rosto</div>\
-      </div>\
-\
-      <!-- FOTO JOGANDO 1 -->\
-      <div class="fg">\
-        <label class="lbl">Foto Jogando 1 <span class="req">*</span></label>\
-        <div class="upload-zone secondary" id="zone-f1" onclick="document.getElementById('file-f1').click()">\
-          <input type="file" id="file-f1" accept="image/*" style="display:none" onchange="handlePhoto(this,'f1')">\
-          <img class="upload-preview" id="prev-f1" alt="Foto em a\'e7\'e3o 1">\
-          <div id="ph-f1">\
-            <div class="upload-icon">\uc0\u55357 \u56567 </div>\
-            <div class="upload-text">Foto em a\'e7\'e3o</div>\
-            <div class="upload-hint">Pode ser com qualquer uniforme \'97 faremos o ajuste na hora de criar a arte, se for utilizada</div>\
-          </div>\
-        </div>\
-        <div class="err" id="e-f1">Adicione uma foto em a\'e7\'e3o</div>\
-      </div>\
-\
-      <!-- FOTO JOGANDO 2 -->\
-      <div class="fg">\
-        <label class="lbl">Foto Jogando 2 <span class="req">*</span></label>\
-        <div class="upload-zone secondary" id="zone-f2" onclick="document.getElementById('file-f2').click()">\
-          <input type="file" id="file-f2" accept="image/*" style="display:none" onchange="handlePhoto(this,'f2')">\
-          <img class="upload-preview" id="prev-f2" alt="Foto em a\'e7\'e3o 2">\
-          <div id="ph-f2">\
-            <div class="upload-icon">\uc0\u55357 \u56567 </div>\
-            <div class="upload-text">Foto em a\'e7\'e3o</div>\
-            <div class="upload-hint">Pode ser com qualquer uniforme \'97 faremos o ajuste na hora de criar a arte, se for utilizada</div>\
-          </div>\
-        </div>\
-        <div class="err" id="e-f2">Adicione uma foto em a\'e7\'e3o</div>\
-      </div>\
-\
-      <div class="fg">\
-        <label class="lbl">Viajar\'e1 sem acompanhante? <span class="req">*</span></label>\
-        <div class="yesno">\
-          <button type="button" class="yesno-btn" id="btn-sim" onclick="selSolo('sim')">Sim</button>\
-          <button type="button" class="yesno-btn" id="btn-nao" onclick="selSolo('nao')">N\'e3o</button>\
-        </div>\
-        <input type="hidden" id="a-solo">\
-        <div class="err" id="e-solo">Selecione uma op\'e7\'e3o</div>\
-      </div>\
-\
-      <!-- Perguntas extras step 1 -->\
-      <div id="extra-q1"></div>\
-\
-      <div class="btn-row">\
-        <button class="btn-primary" onclick="nextS1()">Pr\'f3ximo \uc0\u8594 </button>\
-      </div>\
-    </div>\
-  </div>\
-\
-  <!-- ===== STEP 2 \'97 ACOMPANHANTES ===== -->\
-  <div id="step2" style="display:none">\
-    <div class="section">\
-      <div class="section-title">Acompanhantes</div>\
-      <div id="comp-list"></div>\
-      <button class="btn-add-comp" id="btn-add-comp" onclick="addComp()">\
-        + Adicionar acompanhante &nbsp;<span style="font-size:11px;font-weight:400;color:var(--text-muted)">(at\'e9 4)</span>\
-      </button>\
-      <div class="btn-row">\
-        <button class="btn-back"    onclick="goStep(1)">\uc0\u8592  Voltar</button>\
-        <button class="btn-primary" onclick="goStep(3)">Pr\'f3ximo \uc0\u8594 </button>\
-      </div>\
-    </div>\
-  </div>\
-\
-  <!-- ===== STEP 3 \'97 RESPONS\'c1VEL FINANCEIRO ===== -->\
-  <div id="step3" style="display:none">\
-    <div class="section">\
-      <div class="section-title">Respons\'e1vel Financeiro</div>\
-\
-      <div class="fg">\
-        <label class="lbl">Nome Completo <span class="req">*</span></label>\
-        <input type="text" id="r-nome" placeholder="Nome completo do respons\'e1vel">\
-      </div>\
-\
-      <div class="frow fg">\
-        <div>\
-          <label class="lbl">Data de Nascimento <span class="req">*</span></label>\
-          <input type="date" id="r-nasc">\
-        </div>\
-        <div>\
-          <label class="lbl">Profiss\'e3o <span class="req">*</span></label>\
-          <input type="text" id="r-prof" placeholder="Profiss\'e3o">\
-        </div>\
-      </div>\
-\
-      <div class="frow fg">\
-        <div>\
-          <label class="lbl">RG <span class="req">*</span></label>\
-          <input type="text" id="r-rg" placeholder="N\'famero do RG">\
-        </div>\
-        <div>\
-          <label class="lbl">CPF <span class="req">*</span></label>\
-          <input type="text" id="r-cpf" placeholder="000.000.000-00" maxlength="14" oninput="maskCPF(this)">\
-        </div>\
-      </div>\
-\
-      <div class="frow fg">\
-        <div>\
-          <label class="lbl">Nacionalidade <span class="req">*</span></label>\
-          <input type="text" id="r-nac" placeholder="Ex: Brasileira">\
-        </div>\
-        <div>\
-          <label class="lbl">Estado Civil <span class="req">*</span></label>\
-          <select id="r-ec">\
-            <option value="">Selecionar</option>\
-            <option>Solteiro(a)</option>\
-            <option>Casado(a)</option>\
-            <option>Divorciado(a)</option>\
-            <option>Vi\'favo(a)</option>\
-            <option>Uni\'e3o Est\'e1vel</option>\
-          </select>\
-        </div>\
-      </div>\
-\
-      <div class="fg">\
-        <label class="lbl">Endere\'e7o <span class="req">*</span></label>\
-        <input type="text" id="r-end" placeholder="Rua / Av. / Travessa e n\'famero" style="margin-bottom:8px">\
-        <div class="frow">\
-          <input type="text" id="r-bairro" placeholder="Bairro">\
-          <input type="text" id="r-cidade" placeholder="Cidade">\
-        </div>\
-      </div>\
-\
-      <div class="fg">\
-        <label class="lbl">CEP <span class="req">*</span></label>\
-        <input type="text" id="r-cep" placeholder="00000-000" maxlength="9" oninput="maskCEP(this)">\
-      </div>\
-\
-      <div class="fg">\
-        <label class="lbl">Datas e Observa\'e7\'f5es de Pagamento <span class="req">*</span></label>\
-        <textarea id="r-pag" placeholder="Informe as datas de pagamento e observa\'e7\'f5es importantes para inclus\'e3o em contrato."></textarea>\
-      </div>\
-\
-      <!-- Perguntas extras step 3 -->\
-      <div id="extra-q3"></div>\
-\
-      <div class="btn-row">\
-        <button class="btn-back"    onclick="goStep(2)">\uc0\u8592  Voltar</button>\
-        <button class="btn-primary" id="btn-send" onclick="submitForm()">Enviar Inscri\'e7\'e3o</button>\
-      </div>\
-    </div>\
-\
-    <div class="form-footer">\
-      <span>@sportsbrasilturismo</span>\
-    </div>\
-    <button class="admin-link" onclick="openAdmin()">\uc0\u9881  Painel Administrativo</button>\
-  </div>\
-\
-  <!-- ===== SUCCESS ===== -->\
-  <div class="success-screen" id="success">\
-    <div class="success-icon">\
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none"\
-           stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">\
-        <polyline points="20 6 9 17 4 12"></polyline>\
-      </svg>\
-    </div>\
-    <div class="success-title">Inscri\'e7\'e3o enviada!</div>\
-    <div class="success-sub">Seus dados foram recebidos com sucesso. Em breve a equipe Sports Brasil entrar\'e1 em contato.</div>\
-    <button class="success-link" onclick="location.reload()">Fazer nova inscri\'e7\'e3o</button>\
-  </div>\
-\
-</div><!-- /.wrap -->\
-\
-<!-- ===== ADMIN OVERLAY ===== -->\
-<div class="admin-overlay" id="admin-overlay" onclick="closeAdminOut(event)">\
-  <div class="admin-sheet">\
-    <div class="admin-hdr">\
-      <span>\uc0\u9881  Painel Admin</span>\
-      <button class="admin-close" onclick="closeAdmin()">\uc0\u10005 </button>\
-    </div>\
-\
-    <!-- LOCK -->\
-    <div id="admin-lock">\
-      <div class="lock-wrap">\
-        <div class="lock-icon">\uc0\u55357 \u56594 </div>\
-        <div class="lock-sub">Digite a senha para acessar o painel</div>\
-        <input class="pwd-input" type="password" id="pwd" maxlength="4" placeholder="\'95\'95\'95\'95"\
-               onkeyup="if(event.key==='Enter') checkPwd()">\
-        <div class="pwd-error" id="pwd-err">Senha incorreta. Tente novamente.</div>\
-        <button class="btn-primary" onclick="checkPwd()" style="margin-top:4px">Entrar</button>\
-      </div>\
-    </div>\
-\
-    <!-- CONTENT -->\
-    <div id="admin-content" style="display:none">\
-\
-      <!-- TORNEIO -->\
-      <div style="margin-bottom:28px">\
-        <div class="admin-sec-title">\uc0\u55356 \u57286  Dados do Torneio</div>\
-        <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;line-height:1.5">\
-          Ao salvar, o formul\'e1rio ser\'e1 atualizado imediatamente. Uma nova aba ser\'e1 criada no Google Sheets na pr\'f3xima inscri\'e7\'e3o recebida com esse torneio.\
-        </p>\
-        <div class="fg">\
-          <label class="lbl">Nome do Torneio</label>\
-          <input type="text" id="adm-tname" placeholder="Nome do torneio">\
-        </div>\
-        <div class="frow fg">\
-          <div>\
-            <label class="lbl">Destino</label>\
-            <input type="text" id="adm-tdest" placeholder="Cidade, Pa\'eds">\
-          </div>\
-          <div>\
-            <label class="lbl">Ano</label>\
-            <input type="text" id="adm-tyear" placeholder="2026" maxlength="4">\
-          </div>\
-        </div>\
-        <button class="btn-primary" onclick="saveTournament()" style="margin-top:6px">\
-          \uc0\u55357 \u56510  Salvar Torneio\
-        </button>\
-      </div>\
-\
-      <!-- PERGUNTAS -->\
-      <div>\
-        <div class="admin-sec-title">\uc0\u55357 \u56523  Perguntas Adicionais</div>\
-        <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;line-height:1.5">\
-          Os campos base do formul\'e1rio s\'e3o fixos. Aqui voc\'ea adiciona, edita ou remove perguntas extras que aparecem no formul\'e1rio.\
-        </p>\
-        <div id="q-list"></div>\
-        <button class="btn-add-q" onclick="addQ()">+ Nova Pergunta</button>\
-      </div>\
-\
-    </div>\
-  </div>\
-</div>\
-\
-<!-- ===== JAVASCRIPT ===== -->\
-<script>\
-/* -----------------------------------------------\
-   CONFIGURA\'c7\'c3O \'97 edite aqui ap\'f3s instalar o Apps Script\
-   ----------------------------------------------- */\
-const SCRIPT_URL = '
-\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 https://script.google.com/macros/s/AKfycbxYbRo7xk5rcU_Q11bQoTM_ulF_MdggtnDz6nVKDSfIBOr0KcqsuUPgEZQHDiV7ro2I7g/exec
-\fs24 \cf0 \cb1 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 ';\
-\
-/* -----------------------------------------------\
-   ESTADO\
-   ----------------------------------------------- */\
-let soloVal   = '';\
-let unifVal   = '';\
-let compCount = 0;\
-let photos    = \{ rosto: null, f1: null, f2: null \};\
-let customQs  = [];\
-let tournament = \{ name: 'World Futsal Championship', dest: 'Orlando, EUA', year: '2026' \};\
-\
-/* -----------------------------------------------\
-   INIT\
-   ----------------------------------------------- */\
-(function init() \{\
-  const saved = localStorage.getItem('sb_cfg');\
-  if (saved) \{\
-    try \{\
-      const c = JSON.parse(saved);\
-      if (c.tournament) \{ tournament = c.tournament; refreshTournamentDisplay(); \}\
-      if (c.customQs)   \{ customQs   = c.customQs; \}\
-    \} catch(e) \{\}\
-  \}\
-  const theme = localStorage.getItem('sb_theme') || 'dark';\
-  applyTheme(theme);\
-  renderExtraQs();\
-\})();\
-\
-/* -----------------------------------------------\
-   TEMA\
-   ----------------------------------------------- */\
-function applyTheme(t) \{\
-  document.body.setAttribute('data-theme', t);\
-  document.getElementById('theme-icon').textContent = t === 'dark' ? '\uc0\u9728 ' : '\u55356 \u57113 ';\
-  document.getElementById('theme-lbl').textContent  = t === 'dark' ? 'Modo claro' : 'Modo escuro';\
-\}\
-function toggleTheme() \{\
-  const cur  = document.body.getAttribute('data-theme');\
-  const next = cur === 'dark' ? 'light' : 'dark';\
-  localStorage.setItem('sb_theme', next);\
-  applyTheme(next);\
-\}\
-\
-/* -----------------------------------------------\
-   STEPS\
-   ----------------------------------------------- */\
-let reachedStep = 1;\
-\
-function tryGoStep(n) \{ if (n <= reachedStep) goStep(n); \}\
-\
-function goStep(n) \{\
-  [1,2,3].forEach(i => \{\
-    document.getElementById('step'  + i).style.display = i === n ? 'block' : 'none';\
-    const dot = document.getElementById('dot' + i);\
-    dot.className = 'step-dot ' + (i === n ? 'active' : i < n ? 'done' : 'off');\
-  \});\
-  if (n > reachedStep) reachedStep = n;\
-  window.scrollTo(\{ top: 0, behavior: 'smooth' \});\
-\}\
-\
-function nextS1() \{\
-  let ok = true;\
-  const req = [\
-    ['a-nome','e-nome'],['a-nasc','e-nasc'],['a-cpf','e-cpf'],['a-rg','e-rg']\
-  ];\
-  req.forEach(([fid, eid]) => \{\
-    const el  = document.getElementById(fid);\
-    const err = document.getElementById(eid);\
-    if (!el.value.trim()) \{ err.style.display = 'block'; ok = false; \}\
-    else                  \{ err.style.display = 'none';  \}\
-  \});\
-  if (!unifVal) \{ document.getElementById('e-unif').style.display = 'block'; ok = false; \}\
-  else          \{ document.getElementById('e-unif').style.display = 'none'; \}\
-  if (!photos.rosto) \{ document.getElementById('e-rosto').style.display = 'block'; ok = false; \}\
-  else               \{ document.getElementById('e-rosto').style.display = 'none'; \}\
-  if (!photos.f1)    \{ document.getElementById('e-f1').style.display = 'block'; ok = false; \}\
-  else               \{ document.getElementById('e-f1').style.display = 'none'; \}\
-  if (!photos.f2)    \{ document.getElementById('e-f2').style.display = 'block'; ok = false; \}\
-  else               \{ document.getElementById('e-f2').style.display = 'none'; \}\
-  if (!soloVal) \{ document.getElementById('e-solo').style.display = 'block'; ok = false; \}\
-  else          \{ document.getElementById('e-solo').style.display = 'none'; \}\
-  if (!ok) return;\
-\
-  if (soloVal === 'sim') \{ goStep(3); \}\
-  else \{ if (compCount === 0) addComp(); goStep(2); \}\
-\}\
-\
-/* -----------------------------------------------\
-   PILLS\
-   ----------------------------------------------- */\
-function selPill(group, el, hiddenId) \{\
-  el.closest('.pills').querySelectorAll('.pill').forEach(p => p.classList.remove('sel'));\
-  el.classList.add('sel');\
-  document.getElementById(hiddenId).value = el.textContent.trim();\
-  unifVal = el.textContent.trim();\
-\}\
-\
-/* -----------------------------------------------\
-   YES / NO\
-   ----------------------------------------------- */\
-function selSolo(val) \{\
-  soloVal = val;\
-  document.getElementById('btn-sim').classList.toggle('sel', val === 'sim');\
-  document.getElementById('btn-nao').classList.toggle('sel', val === 'nao');\
-\}\
-\
-/* -----------------------------------------------\
-   PHOTOS \'97 comprime antes de enviar\
-   ----------------------------------------------- */\
-function handlePhoto(input, key) \{\
-  const file = input.files[0];\
-  if (!file) return;\
-  if (file.size > 5 * 1024 * 1024) \{ alert('Foto muito grande. M\'e1ximo 5MB por foto.'); return; \}\
-\
-  const reader = new FileReader();\
-  reader.onload = function(e) \{\
-    const img = new Image();\
-    img.onload = function() \{\
-      const MAX = 1400;\
-      let w = img.width, h = img.height;\
-      if (w > MAX) \{ h = Math.round(h * MAX / w); w = MAX; \}\
-      if (h > MAX) \{ w = Math.round(w * MAX / h); h = MAX; \}\
-      const c = document.createElement('canvas');\
-      c.width = w; c.height = h;\
-      c.getContext('2d').drawImage(img, 0, 0, w, h);\
-      const b64 = c.toDataURL('image/jpeg', 0.82);\
-      photos[key] = b64;\
-      const prev = document.getElementById('prev-' + key);\
-      const ph   = document.getElementById('ph-'   + key);\
-      prev.src = b64;\
-      prev.style.display = 'block';\
-      if (ph) ph.style.display = 'none';\
-      document.getElementById('e-' + (key === 'rosto' ? 'rosto' : key === 'f1' ? 'f1' : 'f2')).style.display = 'none';\
-    \};\
-    img.src = e.target.result;\
-  \};\
-  reader.readAsDataURL(file);\
-\}\
-\
-/* -----------------------------------------------\
-   COMPANIONS\
-   ----------------------------------------------- */\
-function addComp() \{\
-  if (compCount >= 4) return;\
-  compCount++;\
-  const n = compCount;\
-  const list = document.getElementById('comp-list');\
-  const d = document.createElement('div');\
-  d.className = 'comp-block';\
-  d.id = 'comp-' + n;\
-  d.innerHTML = `\
-    <div class="comp-hdr" onclick="toggleComp($\{n\})">\
-      <span class="comp-hdr-title">Acompanhante $\{n\}</span>\
-      <span id="chev-$\{n\}" style="color:var(--orange);font-size:18px;">\uc0\u9650 </span>\
-    </div>\
-    <div class="comp-body" id="cbody-$\{n\}">\
-      <div class="fg">\
-        <label class="lbl">Nome Completo <span class="req">*</span></label>\
-        <input type="text" id="c$\{n\}-nome" placeholder="Nome completo">\
-      </div>\
-      <div class="frow fg">\
-        <div>\
-          <label class="lbl">Nascimento <span class="req">*</span></label>\
-          <input type="date" id="c$\{n\}-nasc">\
-        </div>\
-        <div>\
-          <label class="lbl">CPF <span class="req">*</span></label>\
-          <input type="text" id="c$\{n\}-cpf" placeholder="000.000.000-00" maxlength="14" oninput="maskCPF(this)">\
-        </div>\
-      </div>\
-      <div class="frow fg">\
-        <div>\
-          <label class="lbl">RG <span class="req">*</span></label>\
-          <input type="text" id="c$\{n\}-rg" placeholder="RG">\
-        </div>\
-        <div>\
-          <label class="lbl">Tamanho de Camisa <span class="req">*</span></label>\
-          <div class="pills" id="cpills-$\{n\}">\
-            $\{['10','12','14','P','M','G','GG'].map(s =>\
-              `<div class="pill" style="padding:7px 11px;font-size:12px"\
-                    onclick="selCamisa($\{n\},'$\{s\}',this)">$\{s\}</div>`).join('')\}\
-          </div>\
-          <input type="hidden" id="c$\{n\}-cam">\
-        </div>\
-      </div>\
-      <div class="fg">\
-        <label class="lbl-opt">Email</label>\
-        <input type="email" id="c$\{n\}-email" placeholder="email@email.com">\
-      </div>\
-      <div class="fg">\
-        <label class="lbl-opt">Instagram</label>\
-        <input type="text" id="c$\{n\}-insta" placeholder="@usuario">\
-      </div>\
-      <button onclick="removeComp($\{n\})"\
-              style="background:none;border:none;color:#e05a2b;font-size:12px;cursor:pointer;margin-top:4px;font-family:inherit">\
-        \uc0\u10005  Remover acompanhante\
-      </button>\
-    </div>`;\
-  list.appendChild(d);\
-  if (compCount >= 4) document.getElementById('btn-add-comp').disabled = true;\
-\}\
-\
-function toggleComp(n) \{\
-  const b = document.getElementById('cbody-' + n);\
-  const c = document.getElementById('chev-'  + n);\
-  const open = b.style.display !== 'none';\
-  b.style.display = open ? 'none' : 'block';\
-  c.textContent   = open ? '\uc0\u9660 ' : '\u9650 ';\
-\}\
-\
-function removeComp(n) \{\
-  document.getElementById('comp-' + n).remove();\
-  compCount--;\
-  document.getElementById('btn-add-comp').disabled = false;\
-\}\
-\
-function selCamisa(n, val, el) \{\
-  document.querySelectorAll('#cpills-' + n + ' .pill').forEach(p => p.classList.remove('sel'));\
-  el.classList.add('sel');\
-  document.getElementById('c' + n + '-cam').value = val;\
-\}\
-\
-/* -----------------------------------------------\
-   MASKS\
-   ----------------------------------------------- */\
-function maskCPF(el) \{\
-  let v = el.value.replace(/\\D/g,'').slice(0,11);\
-  v = v.replace(/(\\d\{3\})(\\d)/,'$1.$2').replace(/(\\d\{3\})(\\d)/,'$1.$2').replace(/(\\d\{3\})(\\d\{1,2\})$/,'$1-$2');\
-  el.value = v;\
-\}\
-function maskCEP(el) \{\
-  let v = el.value.replace(/\\D/g,'').slice(0,8);\
-  v = v.replace(/(\\d\{5\})(\\d)/,'$1-$2');\
-  el.value = v;\
-\}\
-\
-/* -----------------------------------------------\
-   SUBMIT\
-   ----------------------------------------------- */\
-async function submitForm() \{\
-  const btn = document.getElementById('btn-send');\
-  btn.innerHTML = '<span class="spinner"></span>Enviando...';\
-  btn.disabled  = true;\
-\
-  const comps = [];\
-  for (let i = 1; i <= 4; i++) \{\
-    if (document.getElementById('c' + i + '-nome')) \{\
-      comps.push(\{\
-        nome:       document.getElementById('c' + i + '-nome')?.value  || '',\
-        nascimento: document.getElementById('c' + i + '-nasc')?.value  || '',\
-        cpf:        document.getElementById('c' + i + '-cpf')?.value   || '',\
-        rg:         document.getElementById('c' + i + '-rg')?.value    || '',\
-        camisa:     document.getElementById('c' + i + '-cam')?.value   || '',\
-        email:      document.getElementById('c' + i + '-email')?.value || '',\
-        instagram:  document.getElementById('c' + i + '-insta')?.value || '',\
-      \});\
-    \}\
-  \}\
-\
-  const extraR1 = collectExtraQAnswers('extra-q1');\
-  const extraR3 = collectExtraQAnswers('extra-q3');\
-\
-  const payload = \{\
-    torneio:    tournament.name,\
-    destino:    tournament.dest,\
-    ano:        tournament.year,\
-    atleta: \{\
-      nome:          document.getElementById('a-nome').value,\
-      nascimento:    document.getElementById('a-nasc').value,\
-      cpf:           document.getElementById('a-cpf').value,\
-      rg:            document.getElementById('a-rg').value,\
-      instagram:     document.getElementById('a-insta').value,\
-      uniforme:      unifVal,\
-      viajaSozinho:  soloVal === 'sim' ? 'Sim' : 'N\'e3o',\
-      fotoRosto:     photos.rosto,\
-      fotoJogando1:  photos.f1,\
-      fotoJogando2:  photos.f2,\
-    \},\
-    acompanhantes: comps,\
-    responsavel: \{\
-      nome:        document.getElementById('r-nome').value,\
-      nascimento:  document.getElementById('r-nasc').value,\
-      profissao:   document.getElementById('r-prof').value,\
-      rg:          document.getElementById('r-rg').value,\
-      cpf:         document.getElementById('r-cpf').value,\
-      nacionalidade: document.getElementById('r-nac').value,\
-      estadoCivil: document.getElementById('r-ec').value,\
-      endereco:    document.getElementById('r-end').value,\
-      bairro:      document.getElementById('r-bairro').value,\
-      cidade:      document.getElementById('r-cidade').value,\
-      cep:         document.getElementById('r-cep').value,\
-      pagamento:   document.getElementById('r-pag').value,\
-    \},\
-    perguntasExtras: \{ ...extraR1, ...extraR3 \},\
-  \};\
-\
-  try \{\
-    const resp = await fetch(SCRIPT_URL, \{\
-      method: 'POST',\
-      body:   JSON.stringify(payload),\
-    \});\
-    const result = await resp.json();\
-    if (result.status === 'ok' || resp.ok) \{\
-      document.getElementById('step3').style.display   = 'none';\
-      document.getElementById('success').style.display = 'block';\
-      window.scrollTo(\{ top: 0, behavior: 'smooth' \});\
-    \} else \{\
-      throw new Error(result.message || 'Erro no servidor');\
-    \}\
-  \} catch (err) \{\
-    alert('Erro ao enviar. Verifique sua conex\'e3o e tente novamente.\\n' + err.message);\
-    btn.innerHTML = 'Enviar Inscri\'e7\'e3o';\
-    btn.disabled  = false;\
-  \}\
-\}\
-\
-/* -----------------------------------------------\
-   ADMIN\
-   ----------------------------------------------- */\
-function openAdmin() \{\
-  document.getElementById('admin-overlay').classList.add('open');\
-  document.getElementById('admin-lock').style.display    = 'block';\
-  document.getElementById('admin-content').style.display = 'none';\
-  document.getElementById('pwd').value = '';\
-  document.getElementById('pwd-err').style.display = 'none';\
-\}\
-function closeAdmin() \{\
-  document.getElementById('admin-overlay').classList.remove('open');\
-\}\
-function closeAdminOut(e) \{\
-  if (e.target === document.getElementById('admin-overlay')) closeAdmin();\
-\}\
-function checkPwd() \{\
-  if (document.getElementById('pwd').value === '0000') \{\
-    document.getElementById('admin-lock').style.display    = 'none';\
-    document.getElementById('admin-content').style.display = 'block';\
-    loadAdminData();\
-  \} else \{\
-    document.getElementById('pwd-err').style.display = 'block';\
-  \}\
-\}\
-function loadAdminData() \{\
-  document.getElementById('adm-tname').value = tournament.name;\
-  document.getElementById('adm-tdest').value = tournament.dest;\
-  document.getElementById('adm-tyear').value = tournament.year;\
-  renderQList();\
-\}\
-\
-/* -----------------------------------------------\
-   TORNEIO\
-   ----------------------------------------------- */\
-function refreshTournamentDisplay() \{\
-  document.getElementById('disp-name').textContent = tournament.name;\
-  document.getElementById('disp-dest').textContent = tournament.dest;\
-  document.getElementById('disp-year').textContent = tournament.year;\
-\}\
-\
-function saveTournament() \{\
-  const name = document.getElementById('adm-tname').value.trim();\
-  const dest = document.getElementById('adm-tdest').value.trim();\
-  const year = document.getElementById('adm-tyear').value.trim();\
-  if (!name || !dest || !year) \{ alert('Preencha todos os campos do torneio.'); return; \}\
-  tournament = \{ name, dest, year \};\
-  refreshTournamentDisplay();\
-  saveConfig();\
-  alert('\uc0\u9989  Torneio atualizado! Nova aba ser\'e1 criada automaticamente no Sheets ao receber a primeira inscri\'e7\'e3o deste torneio.');\
-  closeAdmin();\
-\}\
-\
-/* -----------------------------------------------\
-   PERGUNTAS EXTRAS\
-   ----------------------------------------------- */\
-function addQ() \{\
-  const label = prompt('Nome da pergunta:\\n(ex: "Possui passaporte?", "Tem restri\'e7\'e3o alimentar?")');\
-  if (!label || !label.trim()) return;\
-  const type = confirm(\
-    'Tipo de resposta:\\n\\n  OK = Sim / N\'e3o\\n  Cancelar = Texto livre'\
-  ) ? 'yesno' : 'text';\
-  const required = confirm('Essa pergunta \'e9 obrigat\'f3ria?');\
-  const step = confirm(\
-    'Em qual etapa exibir?\\n\\n  OK = Etapa 1 (Atleta)\\n  Cancelar = Etapa 3 (Resp. Financeiro)'\
-  ) ? 1 : 3;\
-  customQs.push(\{ id: Date.now(), label: label.trim(), type, required, step \});\
-  saveConfig();\
-  renderQList();\
-  renderExtraQs();\
-\}\
-\
-function removeQ(id) \{\
-  if (!confirm('Remover essa pergunta do formul\'e1rio?')) return;\
-  customQs = customQs.filter(q => q.id !== id);\
-  saveConfig();\
-  renderQList();\
-  renderExtraQs();\
-\}\
-\
-function renderQList() \{\
-  const list = document.getElementById('q-list');\
-  if (!customQs.length) \{\
-    list.innerHTML = '<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px">Nenhuma pergunta extra adicionada ainda.</p>';\
-    return;\
-  \}\
-  list.innerHTML = customQs.map(q => `\
-    <div class="q-item">\
-      <span class="q-text">$\{q.label\}</span>\
-      <div class="q-actions">\
-        <span class="badge">Etapa $\{q.step\}</span>\
-        <span class="badge">$\{q.type === 'yesno' ? 'Sim/N\'e3o' : 'texto'\}</span>\
-        <span class="badge">$\{q.required ? 'obrigat\'f3rio' : 'opcional'\}</span>\
-        <button class="icon-btn" onclick="removeQ($\{q.id\})" title="Remover">\uc0\u10005 </button>\
-      </div>\
-    </div>`).join('');\
-\}\
-\
-function renderExtraQs() \{\
-  [1,3].forEach(s => \{\
-    const container = document.getElementById('extra-q' + s);\
-    if (!container) return;\
-    const qs = customQs.filter(q => q.step === s);\
-    container.innerHTML = qs.map(q => `\
-      <div class="fg" id="eq-$\{q.id\}">\
-        <label class="$\{q.required ? 'lbl' : 'lbl-opt'\}">$\{q.label\}$\{q.required ? ' <span class="req">*</span>' : ''\}</label>\
-        $\{q.type === 'yesno'\
-          ? `<div class="yesno">\
-               <button type="button" class="yesno-btn" id="eq-sim-$\{q.id\}" onclick="selEQ($\{q.id\},'sim')">Sim</button>\
-               <button type="button" class="yesno-btn" id="eq-nao-$\{q.id\}" onclick="selEQ($\{q.id\},'nao')">N\'e3o</button>\
-             </div>\
-             <input type="hidden" id="eq-val-$\{q.id\}">`\
-          : `<input type="text" id="eq-val-$\{q.id\}" placeholder="Sua resposta">`\}\
-      </div>`).join('');\
-  \});\
-\}\
-\
-function selEQ(id, val) \{\
-  document.getElementById('eq-sim-' + id).classList.toggle('sel', val === 'sim');\
-  document.getElementById('eq-nao-' + id).classList.toggle('sel', val === 'nao');\
-  document.getElementById('eq-val-' + id).value = val === 'sim' ? 'Sim' : 'N\'e3o';\
-\}\
-\
-function collectExtraQAnswers(containerId) \{\
-  const result = \{\};\
-  const container = document.getElementById(containerId);\
-  if (!container) return result;\
-  customQs.forEach(q => \{\
-    const el = document.getElementById('eq-val-' + q.id);\
-    if (el) result[q.label] = el.value;\
-  \});\
-  return result;\
-\}\
-\
-/* -----------------------------------------------\
-   PERSIST\
-   ----------------------------------------------- */\
-function saveConfig() \{\
-  localStorage.setItem('sb_cfg', JSON.stringify(\{ tournament, customQs \}));\
-\}\
-</script>\
-</body>\
-</html>}
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      transition: background .25s, color .25s;
+    }
+
+    /* ===== WRAPPER ===== */
+    .wrap {
+      max-width: 660px;
+      margin: 0 auto;
+      padding-bottom: 48px;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: var(--orange);
+      padding: 28px 24px 22px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Logo — substitua o src pelo caminho real da imagem */
+    .header-logo {
+      max-width: 240px;
+      max-height: 80px;
+      width: auto;
+      height: auto;
+      margin-bottom: 18px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Fallback caso a imagem não carregue */
+    .header-fallback {
+      display: none;
+      margin-bottom: 18px;
+    }
+    .header-fallback-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    .header-fallback-sub {
+      font-size: 10px;
+      color: rgba(255,255,255,0.75);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .tournament-box {
+      background: rgba(0,0,0,0.22);
+      border-radius: 12px;
+      padding: 12px 16px;
+      text-align: left;
+    }
+    .tournament-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .tournament-meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.82);
+      margin-top: 4px;
+    }
+
+    /* Theme toggle */
+    .theme-toggle {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: var(--toggle-bg);
+      border: none;
+      border-radius: 20px;
+      padding: 6px 12px;
+      cursor: pointer;
+      font-size: 12px;
+      color: var(--toggle-c);
+      font-family: inherit;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    /* ===== STEPS ===== */
+    .steps-bar {
+      background: var(--card);
+      padding: 14px 24px 10px;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .steps-row {
+      display: flex;
+      align-items: center;
+    }
+    .step-dot {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      cursor: pointer;
+      transition: background .2s, color .2s;
+    }
+    .step-dot.active  { background: var(--orange); color: #fff; }
+    .step-dot.done    { background: var(--orange); color: #fff; opacity: .55; }
+    .step-dot.off     { background: var(--step-off-bg); color: var(--step-off-c); }
+    .step-line        { flex: 1; height: 1px; background: var(--step-line); }
+    .steps-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 6px;
+    }
+    .steps-labels span {
+      font-size: 10px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    /* ===== SECTION ===== */
+    .section {
+      padding: 22px 24px;
+    }
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--orange);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--sec-border);
+    }
+
+    /* ===== FIELDS ===== */
+    .fg { margin-bottom: 16px; }
+    .fg:last-child { margin-bottom: 0; }
+
+    .lbl {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--label);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .lbl-opt {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--label-opt);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .req { color: #e05a2b; }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 100%;
+      background: var(--input-bg);
+      border: 1.5px solid var(--input-border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 14px;
+      color: var(--text);
+      font-family: inherit;
+      transition: border-color .2s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--orange);
+    }
+    input::placeholder, textarea::placeholder { color: var(--text-ph); }
+    textarea { resize: vertical; min-height: 90px; line-height: 1.5; }
+
+    .frow {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    /* ===== PILLS ===== */
+    .pills { display: flex; gap: 8px; flex-wrap: wrap; }
+    .pill {
+      padding: 9px 14px;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1.5px solid var(--pill-border);
+      background: var(--pill-bg);
+      color: var(--pill-c);
+      user-select: none;
+      transition: all .15s;
+    }
+    .pill.sel { background: var(--orange); color: #fff; border-color: var(--orange); }
+
+    /* ===== YES/NO ===== */
+    .yesno { display: flex; gap: 10px; }
+    .yesno-btn {
+      flex: 1;
+      padding: 13px;
+      border-radius: 10px;
+      border: 1.5px solid var(--pill-border);
+      background: var(--pill-bg);
+      color: var(--pill-c);
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: center;
+      transition: all .15s;
+      font-family: inherit;
+    }
+    .yesno-btn.sel { background: var(--orange); color: #fff; border-color: var(--orange); }
+
+    /* ===== UPLOAD ===== */
+    .upload-zone {
+      background: var(--input-bg);
+      border: 1.5px dashed var(--orange);
+      border-radius: 10px;
+      padding: 22px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      transition: border-color .2s;
+    }
+    .upload-zone.secondary { border-color: var(--upload-border); }
+    .upload-zone input[type="file"] {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      opacity: 0; cursor: pointer;
+    }
+    .upload-icon {
+      font-size: 30px;
+      color: var(--orange);
+      margin-bottom: 7px;
+    }
+    .upload-zone.secondary .upload-icon { color: var(--upload-icon-c); }
+    .upload-text { font-size: 13px; color: var(--text-muted); }
+    .upload-hint { font-size: 11px; color: var(--text-ph); margin-top: 4px; line-height: 1.5; }
+    .upload-preview {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: none;
+    }
+
+    /* ===== COMPANIONS ===== */
+    .comp-block {
+      background: var(--comp-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .comp-hdr {
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      border-bottom: 1px solid var(--border);
+    }
+    .comp-hdr-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+    .comp-body { padding: 18px 16px; }
+
+    .btn-add-comp {
+      width: 100%;
+      padding: 14px;
+      background: transparent;
+      border: 1.5px dashed var(--add-comp-border);
+      border-radius: 12px;
+      color: var(--orange);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: center;
+      margin-bottom: 8px;
+      font-family: inherit;
+      transition: opacity .2s;
+    }
+    .btn-add-comp:disabled { opacity: .35; cursor: not-allowed; }
+
+    /* ===== BUTTONS ===== */
+    .btn-row { display: flex; gap: 12px; margin-top: 26px; }
+
+    .btn-primary {
+      flex: 2;
+      padding: 16px;
+      background: var(--orange);
+      border: none;
+      border-radius: 12px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: opacity .2s;
+    }
+    .btn-primary:hover { opacity: .88; }
+    .btn-primary:disabled { opacity: .6; cursor: not-allowed; }
+
+    .btn-back {
+      flex: 1;
+      padding: 16px;
+      background: transparent;
+      border: 1.5px solid var(--btn-back-border);
+      border-radius: 12px;
+      color: var(--btn-back-c);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    /* ===== ERROR MSG ===== */
+    .err { font-size: 11px; color: #e05a2b; margin-top: 5px; display: none; }
+
+    /* ===== FOOTER ===== */
+    .form-footer {
+      text-align: center;
+      padding: 18px 24px 6px;
+      border-top: 1px solid var(--footer-border);
+      margin-top: 8px;
+    }
+    .form-footer span {
+      font-size: 13px;
+      color: var(--orange);
+      font-weight: 600;
+      letter-spacing: .5px;
+    }
+    .admin-link {
+      display: block;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 12px;
+      padding-bottom: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      background: none;
+      border: none;
+      font-family: inherit;
+      width: 100%;
+    }
+
+    /* ===== SUCCESS ===== */
+    .success-screen {
+      display: none;
+      text-align: center;
+      padding: 64px 24px;
+      background: var(--success-bg);
+    }
+    .success-icon {
+      width: 72px; height: 72px;
+      background: var(--orange);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 22px;
+    }
+    .success-title {
+      font-size: 22px; font-weight: 700;
+      color: var(--text); margin-bottom: 12px;
+    }
+    .success-sub {
+      color: var(--text-muted); font-size: 15px;
+      line-height: 1.65; max-width: 340px;
+      margin: 0 auto 28px;
+    }
+    .success-link {
+      color: var(--orange); font-size: 14px;
+      font-weight: 600; text-decoration: none;
+      cursor: pointer; background: none;
+      border: none; font-family: inherit;
+    }
+
+    /* ===== ADMIN OVERLAY ===== */
+    .admin-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: var(--overlay);
+      z-index: 200;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .admin-overlay.open { display: flex; }
+
+    .admin-sheet {
+      background: var(--admin-bg);
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      max-width: 660px;
+      max-height: 92vh;
+      overflow-y: auto;
+      padding: 24px;
+    }
+    .admin-hdr {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--orange);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .admin-close {
+      background: none; border: none;
+      color: var(--text-muted); font-size: 20px;
+      cursor: pointer; line-height: 1;
+    }
+    .admin-sec-title {
+      font-size: 11px; font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase; letter-spacing: 1px;
+      margin-bottom: 14px;
+    }
+
+    /* Lock */
+    .lock-wrap { text-align: center; padding: 24px 0; }
+    .lock-icon { font-size: 48px; color: var(--orange); margin-bottom: 14px; }
+    .lock-sub  { font-size: 14px; color: var(--text-muted); margin-bottom: 20px; }
+    .pwd-input {
+      width: 100%;
+      background: var(--input-bg);
+      border: 1.5px solid var(--input-border);
+      border-radius: 10px;
+      padding: 14px;
+      color: var(--text);
+      font-size: 26px;
+      text-align: center;
+      letter-spacing: 14px;
+      font-family: inherit;
+      margin-bottom: 12px;
+      -webkit-appearance: none;
+    }
+    .pwd-error { font-size: 12px; color: #e05a2b; margin-bottom: 10px; display: none; }
+
+    /* Question list */
+    .q-item {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      gap: 10px;
+    }
+    .q-text { font-size: 13px; color: var(--text); flex: 1; }
+    .q-actions { display: flex; gap: 8px; align-items: center; flex-shrink: 0; }
+    .badge {
+      font-size: 10px;
+      background: var(--badge-bg);
+      color: var(--badge-c);
+      padding: 3px 8px;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+    .icon-btn {
+      background: none; border: none;
+      cursor: pointer; font-size: 15px;
+      color: var(--text-muted); padding: 2px 4px;
+    }
+    .btn-add-q {
+      width: 100%;
+      padding: 13px;
+      background: transparent;
+      border: 1.5px dashed var(--orange);
+      border-radius: 10px;
+      color: var(--orange);
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      margin-top: 4px;
+    }
+
+    /* Spinner */
+    .spinner {
+      display: inline-block;
+      width: 17px; height: 17px;
+      border: 2px solid rgba(255,255,255,.35);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      vertical-align: middle;
+      margin-right: 7px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 480px) {
+      .frow { grid-template-columns: 1fr; }
+      .section { padding: 18px 16px; }
+      .steps-bar { padding: 12px 16px 8px; }
+      .header { padding: 24px 16px 20px; }
+      .header-logo { max-width: 180px; }
+    }
+  </style>
+</head>
+
+<body data-theme="dark">
+<div class="wrap">
+
+  <!-- ===== HEADER ===== -->
+  <div class="header">
+    <button class="theme-toggle" onclick="toggleTheme()">
+      <span id="theme-icon">☀</span>
+      <span id="theme-lbl">Modo claro</span>
+    </button>
+
+    <!--
+      LOGO: substitua o atributo src pelo caminho da imagem.
+      Você pode embutir o logo em base64 ou hospedar no Google Drive com link público.
+      Exemplo com base64: src="data:image/png;base64,XXXXXXXX..."
+    -->
+    <img
+      id="sb-logo"
+      src="https://lh3.googleusercontent.com/d/1yASZbhzw0kV8lcd82A2bt4MyHDHia1oq"
+      alt="Sports Brasil"
+      class="header-logo"
+      onerror="this.style.display='none'; document.getElementById('header-fallback').style.display='block';"
+    />
+    <div id="header-fallback" class="header-fallback">
+      <div class="header-fallback-title">SPORTS BRASIL</div>
+      <div class="header-fallback-sub">TURISMO &amp; EVENTOS</div>
+    </div>
+
+    <div class="tournament-box">
+      <div class="tournament-name" id="disp-name">World Futsal Championship</div>
+      <div class="tournament-meta">📍 <span id="disp-dest">Orlando, EUA</span> · <span id="disp-year">2026</span></div>
+    </div>
+  </div>
+
+  <!-- ===== STEPS BAR ===== -->
+  <div class="steps-bar">
+    <div class="steps-row">
+      <div class="step-dot active" id="dot1" onclick="tryGoStep(1)">1</div>
+      <div class="step-line"></div>
+      <div class="step-dot off"    id="dot2" onclick="tryGoStep(2)">2</div>
+      <div class="step-line"></div>
+      <div class="step-dot off"    id="dot3" onclick="tryGoStep(3)">3</div>
+    </div>
+    <div class="steps-labels">
+      <span>Atleta</span>
+      <span>Acompanhantes</span>
+      <span>Resp. Financeiro</span>
+    </div>
+  </div>
+
+  <!-- ===== STEP 1 — ATLETA ===== -->
+  <div id="step1">
+    <div class="section">
+      <div class="section-title">Dados do Atleta</div>
+
+      <div class="fg">
+        <label class="lbl">Nome Completo <span class="req">*</span></label>
+        <input type="text" id="a-nome" placeholder="Nome completo do atleta">
+        <div class="err" id="e-nome">Campo obrigatório</div>
+      </div>
+
+      <div class="frow fg">
+        <div>
+          <label class="lbl">Data de Nascimento <span class="req">*</span></label>
+          <input type="date" id="a-nasc">
+          <div class="err" id="e-nasc">Campo obrigatório</div>
+        </div>
+        <div>
+          <label class="lbl">CPF <span class="req">*</span></label>
+          <input type="text" id="a-cpf" placeholder="000.000.000-00" maxlength="14" oninput="maskCPF(this)">
+          <div class="err" id="e-cpf">Campo obrigatório</div>
+        </div>
+      </div>
+
+      <div class="fg">
+        <label class="lbl">RG <span class="req">*</span></label>
+        <input type="text" id="a-rg" placeholder="Número do RG">
+        <div class="err" id="e-rg">Campo obrigatório</div>
+      </div>
+
+      <div class="fg">
+        <label class="lbl-opt">Instagram do Atleta</label>
+        <input type="text" id="a-insta" placeholder="@usuario">
+      </div>
+
+      <div class="fg">
+        <label class="lbl">Tamanho de Uniforme <span class="req">*</span></label>
+        <div class="pills" id="unif-pills">
+          <div class="pill" onclick="selPill('unif',this,'a-unif')">10</div>
+          <div class="pill" onclick="selPill('unif',this,'a-unif')">12</div>
+          <div class="pill" onclick="selPill('unif',this,'a-unif')">14</div>
+          <div class="pill" onclick="selPill('unif',this,'a-unif')">P</div>
+          <div class="pill" onclick="selPill('unif',this,'a-unif')">M</div>
+          <div class="pill" onclick="selPill('unif',this,'a-unif')">G</div>
+          <div class="pill" onclick="selPill('unif',this,'a-unif')">GG</div>
+        </div>
+        <input type="hidden" id="a-unif">
+        <div class="err" id="e-unif">Selecione um tamanho</div>
+      </div>
+
+      <!-- FOTO DE ROSTO -->
+      <div class="fg">
+        <label class="lbl">Foto de Rosto <span class="req">*</span></label>
+        <div class="upload-zone" id="zone-rosto" onclick="document.getElementById('file-rosto').click()">
+          <input type="file" id="file-rosto" accept="image/*" style="display:none" onchange="handlePhoto(this,'rosto')">
+          <img class="upload-preview" id="prev-rosto" alt="Foto de rosto">
+          <div id="ph-rosto">
+            <div class="upload-icon">👤</div>
+            <div class="upload-text">Toque para adicionar foto de rosto</div>
+            <div class="upload-hint">Foto de rosto clara e recente · JPG ou PNG · máx. 5MB</div>
+          </div>
+        </div>
+        <div class="err" id="e-rosto">Adicione a foto de rosto</div>
+      </div>
+
+      <!-- FOTO JOGANDO 1 -->
+      <div class="fg">
+        <label class="lbl">Foto Jogando 1 <span class="req">*</span></label>
+        <div class="upload-zone secondary" id="zone-f1" onclick="document.getElementById('file-f1').click()">
+          <input type="file" id="file-f1" accept="image/*" style="display:none" onchange="handlePhoto(this,'f1')">
+          <img class="upload-preview" id="prev-f1" alt="Foto em ação 1">
+          <div id="ph-f1">
+            <div class="upload-icon">📷</div>
+            <div class="upload-text">Foto em ação</div>
+            <div class="upload-hint">Pode ser com qualquer uniforme — faremos o ajuste na hora de criar a arte, se for utilizada</div>
+          </div>
+        </div>
+        <div class="err" id="e-f1">Adicione uma foto em ação</div>
+      </div>
+
+      <!-- FOTO JOGANDO 2 -->
+      <div class="fg">
+        <label class="lbl">Foto Jogando 2 <span class="req">*</span></label>
+        <div class="upload-zone secondary" id="zone-f2" onclick="document.getElementById('file-f2').click()">
+          <input type="file" id="file-f2" accept="image/*" style="display:none" onchange="handlePhoto(this,'f2')">
+          <img class="upload-preview" id="prev-f2" alt="Foto em ação 2">
+          <div id="ph-f2">
+            <div class="upload-icon">📷</div>
+            <div class="upload-text">Foto em ação</div>
+            <div class="upload-hint">Pode ser com qualquer uniforme — faremos o ajuste na hora de criar a arte, se for utilizada</div>
+          </div>
+        </div>
+        <div class="err" id="e-f2">Adicione uma foto em ação</div>
+      </div>
+
+      <div class="fg">
+        <label class="lbl">Viajará sem acompanhante? <span class="req">*</span></label>
+        <div class="yesno">
+          <button type="button" class="yesno-btn" id="btn-sim" onclick="selSolo('sim')">Sim</button>
+          <button type="button" class="yesno-btn" id="btn-nao" onclick="selSolo('nao')">Não</button>
+        </div>
+        <input type="hidden" id="a-solo">
+        <div class="err" id="e-solo">Selecione uma opção</div>
+      </div>
+
+      <!-- Perguntas extras step 1 -->
+      <div id="extra-q1"></div>
+
+      <div class="btn-row">
+        <button class="btn-primary" onclick="nextS1()">Próximo →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STEP 2 — ACOMPANHANTES ===== -->
+  <div id="step2" style="display:none">
+    <div class="section">
+      <div class="section-title">Acompanhantes</div>
+      <div id="comp-list"></div>
+      <button class="btn-add-comp" id="btn-add-comp" onclick="addComp()">
+        + Adicionar acompanhante &nbsp;<span style="font-size:11px;font-weight:400;color:var(--text-muted)">(até 4)</span>
+      </button>
+      <div class="btn-row">
+        <button class="btn-back"    onclick="goStep(1)">← Voltar</button>
+        <button class="btn-primary" onclick="goStep(3)">Próximo →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== STEP 3 — RESPONSÁVEL FINANCEIRO ===== -->
+  <div id="step3" style="display:none">
+    <div class="section">
+      <div class="section-title">Responsável Financeiro</div>
+
+      <div class="fg">
+        <label class="lbl">Nome Completo <span class="req">*</span></label>
+        <input type="text" id="r-nome" placeholder="Nome completo do responsável">
+      </div>
+
+      <div class="frow fg">
+        <div>
+          <label class="lbl">Data de Nascimento <span class="req">*</span></label>
+          <input type="date" id="r-nasc">
+        </div>
+        <div>
+          <label class="lbl">Profissão <span class="req">*</span></label>
+          <input type="text" id="r-prof" placeholder="Profissão">
+        </div>
+      </div>
+
+      <div class="frow fg">
+        <div>
+          <label class="lbl">RG <span class="req">*</span></label>
+          <input type="text" id="r-rg" placeholder="Número do RG">
+        </div>
+        <div>
+          <label class="lbl">CPF <span class="req">*</span></label>
+          <input type="text" id="r-cpf" placeholder="000.000.000-00" maxlength="14" oninput="maskCPF(this)">
+        </div>
+      </div>
+
+      <div class="frow fg">
+        <div>
+          <label class="lbl">Nacionalidade <span class="req">*</span></label>
+          <input type="text" id="r-nac" placeholder="Ex: Brasileira">
+        </div>
+        <div>
+          <label class="lbl">Estado Civil <span class="req">*</span></label>
+          <select id="r-ec">
+            <option value="">Selecionar</option>
+            <option>Solteiro(a)</option>
+            <option>Casado(a)</option>
+            <option>Divorciado(a)</option>
+            <option>Viúvo(a)</option>
+            <option>União Estável</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="fg">
+        <label class="lbl">Endereço <span class="req">*</span></label>
+        <input type="text" id="r-end" placeholder="Rua / Av. / Travessa e número" style="margin-bottom:8px">
+        <div class="frow">
+          <input type="text" id="r-bairro" placeholder="Bairro">
+          <input type="text" id="r-cidade" placeholder="Cidade">
+        </div>
+      </div>
+
+      <div class="fg">
+        <label class="lbl">CEP <span class="req">*</span></label>
+        <input type="text" id="r-cep" placeholder="00000-000" maxlength="9" oninput="maskCEP(this)">
+      </div>
+
+      <div class="fg">
+        <label class="lbl">Datas e Observações de Pagamento <span class="req">*</span></label>
+        <textarea id="r-pag" placeholder="Informe as datas de pagamento e observações importantes para inclusão em contrato."></textarea>
+      </div>
+
+      <!-- Perguntas extras step 3 -->
+      <div id="extra-q3"></div>
+
+      <div class="btn-row">
+        <button class="btn-back"    onclick="goStep(2)">← Voltar</button>
+        <button class="btn-primary" id="btn-send" onclick="submitForm()">Enviar Inscrição</button>
+      </div>
+    </div>
+
+    <div class="form-footer">
+      <span>@sportsbrasilturismo</span>
+    </div>
+    <button class="admin-link" onclick="openAdmin()">⚙ Painel Administrativo</button>
+  </div>
+
+  <!-- ===== SUCCESS ===== -->
+  <div class="success-screen" id="success">
+    <div class="success-icon">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none"
+           stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+    </div>
+    <div class="success-title">Inscrição enviada!</div>
+    <div class="success-sub">Seus dados foram recebidos com sucesso. Em breve a equipe Sports Brasil entrará em contato.</div>
+    <button class="success-link" onclick="location.reload()">Fazer nova inscrição</button>
+  </div>
+
+</div><!-- /.wrap -->
+
+<!-- ===== ADMIN OVERLAY ===== -->
+<div class="admin-overlay" id="admin-overlay" onclick="closeAdminOut(event)">
+  <div class="admin-sheet">
+    <div class="admin-hdr">
+      <span>⚙ Painel Admin</span>
+      <button class="admin-close" onclick="closeAdmin()">✕</button>
+    </div>
+
+    <!-- LOCK -->
+    <div id="admin-lock">
+      <div class="lock-wrap">
+        <div class="lock-icon">🔒</div>
+        <div class="lock-sub">Digite a senha para acessar o painel</div>
+        <input class="pwd-input" type="password" id="pwd" maxlength="4" placeholder="••••"
+               onkeyup="if(event.key==='Enter') checkPwd()">
+        <div class="pwd-error" id="pwd-err">Senha incorreta. Tente novamente.</div>
+        <button class="btn-primary" onclick="checkPwd()" style="margin-top:4px">Entrar</button>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div id="admin-content" style="display:none">
+
+      <!-- TORNEIO -->
+      <div style="margin-bottom:28px">
+        <div class="admin-sec-title">🏆 Dados do Torneio</div>
+        <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;line-height:1.5">
+          Ao salvar, o formulário será atualizado imediatamente. Uma nova aba será criada no Google Sheets na próxima inscrição recebida com esse torneio.
+        </p>
+        <div class="fg">
+          <label class="lbl">Nome do Torneio</label>
+          <input type="text" id="adm-tname" placeholder="Nome do torneio">
+        </div>
+        <div class="frow fg">
+          <div>
+            <label class="lbl">Destino</label>
+            <input type="text" id="adm-tdest" placeholder="Cidade, País">
+          </div>
+          <div>
+            <label class="lbl">Ano</label>
+            <input type="text" id="adm-tyear" placeholder="2026" maxlength="4">
+          </div>
+        </div>
+        <button class="btn-primary" onclick="saveTournament()" style="margin-top:6px">
+          💾 Salvar Torneio
+        </button>
+      </div>
+
+      <!-- PERGUNTAS -->
+      <div>
+        <div class="admin-sec-title">📋 Perguntas Adicionais</div>
+        <p style="font-size:12px;color:var(--text-muted);margin-bottom:14px;line-height:1.5">
+          Os campos base do formulário são fixos. Aqui você adiciona, edita ou remove perguntas extras que aparecem no formulário.
+        </p>
+        <div id="q-list"></div>
+        <button class="btn-add-q" onclick="addQ()">+ Nova Pergunta</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+/* -----------------------------------------------
+   CONFIGURAÇÃO — edite aqui após instalar o Apps Script
+   ----------------------------------------------- */
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxYbRo7xk5rcU_Q11bQoTM_ulF_MdggtnDz6nVKDSfIBOr0KcqsuUPgEZQHDiV7ro2I7g/exec';
+
+/* -----------------------------------------------
+   ESTADO
+   ----------------------------------------------- */
+let soloVal   = '';
+let unifVal   = '';
+let compCount = 0;
+let photos    = { rosto: null, f1: null, f2: null };
+let customQs  = [];
+let tournament = { name: 'World Futsal Championship', dest: 'Orlando, EUA', year: '2026' };
+
+/* -----------------------------------------------
+   INIT
+   ----------------------------------------------- */
+(function init() {
+  const saved = localStorage.getItem('sb_cfg');
+  if (saved) {
+    try {
+      const c = JSON.parse(saved);
+      if (c.tournament) { tournament = c.tournament; refreshTournamentDisplay(); }
+      if (c.customQs)   { customQs   = c.customQs; }
+    } catch(e) {}
+  }
+  const theme = localStorage.getItem('sb_theme') || 'dark';
+  applyTheme(theme);
+  renderExtraQs();
+})();
+
+/* -----------------------------------------------
+   TEMA
+   ----------------------------------------------- */
+function applyTheme(t) {
+  document.body.setAttribute('data-theme', t);
+  document.getElementById('theme-icon').textContent = t === 'dark' ? '☀' : '🌙';
+  document.getElementById('theme-lbl').textContent  = t === 'dark' ? 'Modo claro' : 'Modo escuro';
+}
+function toggleTheme() {
+  const cur  = document.body.getAttribute('data-theme');
+  const next = cur === 'dark' ? 'light' : 'dark';
+  localStorage.setItem('sb_theme', next);
+  applyTheme(next);
+}
+
+/* -----------------------------------------------
+   STEPS
+   ----------------------------------------------- */
+let reachedStep = 1;
+
+function tryGoStep(n) { if (n <= reachedStep) goStep(n); }
+
+function goStep(n) {
+  [1,2,3].forEach(i => {
+    document.getElementById('step'  + i).style.display = i === n ? 'block' : 'none';
+    const dot = document.getElementById('dot' + i);
+    dot.className = 'step-dot ' + (i === n ? 'active' : i < n ? 'done' : 'off');
+  });
+  if (n > reachedStep) reachedStep = n;
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function nextS1() {
+  let ok = true;
+  const req = [
+    ['a-nome','e-nome'],['a-nasc','e-nasc'],['a-cpf','e-cpf'],['a-rg','e-rg']
+  ];
+  req.forEach(([fid, eid]) => {
+    const el  = document.getElementById(fid);
+    const err = document.getElementById(eid);
+    if (!el.value.trim()) { err.style.display = 'block'; ok = false; }
+    else                  { err.style.display = 'none';  }
+  });
+  if (!unifVal) { document.getElementById('e-unif').style.display = 'block'; ok = false; }
+  else          { document.getElementById('e-unif').style.display = 'none'; }
+  if (!photos.rosto) { document.getElementById('e-rosto').style.display = 'block'; ok = false; }
+  else               { document.getElementById('e-rosto').style.display = 'none'; }
+  if (!photos.f1)    { document.getElementById('e-f1').style.display = 'block'; ok = false; }
+  else               { document.getElementById('e-f1').style.display = 'none'; }
+  if (!photos.f2)    { document.getElementById('e-f2').style.display = 'block'; ok = false; }
+  else               { document.getElementById('e-f2').style.display = 'none'; }
+  if (!soloVal) { document.getElementById('e-solo').style.display = 'block'; ok = false; }
+  else          { document.getElementById('e-solo').style.display = 'none'; }
+  if (!ok) return;
+
+  if (soloVal === 'sim') { goStep(3); }
+  else { if (compCount === 0) addComp(); goStep(2); }
+}
+
+/* -----------------------------------------------
+   PILLS
+   ----------------------------------------------- */
+function selPill(group, el, hiddenId) {
+  el.closest('.pills').querySelectorAll('.pill').forEach(p => p.classList.remove('sel'));
+  el.classList.add('sel');
+  document.getElementById(hiddenId).value = el.textContent.trim();
+  unifVal = el.textContent.trim();
+}
+
+/* -----------------------------------------------
+   YES / NO
+   ----------------------------------------------- */
+function selSolo(val) {
+  soloVal = val;
+  document.getElementById('btn-sim').classList.toggle('sel', val === 'sim');
+  document.getElementById('btn-nao').classList.toggle('sel', val === 'nao');
+}
+
+/* -----------------------------------------------
+   PHOTOS — comprime antes de enviar
+   ----------------------------------------------- */
+function handlePhoto(input, key) {
+  const file = input.files[0];
+  if (!file) return;
+  if (file.size > 5 * 1024 * 1024) { alert('Foto muito grande. Máximo 5MB por foto.'); return; }
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const img = new Image();
+    img.onload = function() {
+      const MAX = 1400;
+      let w = img.width, h = img.height;
+      if (w > MAX) { h = Math.round(h * MAX / w); w = MAX; }
+      if (h > MAX) { w = Math.round(w * MAX / h); h = MAX; }
+      const c = document.createElement('canvas');
+      c.width = w; c.height = h;
+      c.getContext('2d').drawImage(img, 0, 0, w, h);
+      const b64 = c.toDataURL('image/jpeg', 0.82);
+      photos[key] = b64;
+      const prev = document.getElementById('prev-' + key);
+      const ph   = document.getElementById('ph-'   + key);
+      prev.src = b64;
+      prev.style.display = 'block';
+      if (ph) ph.style.display = 'none';
+      document.getElementById('e-' + (key === 'rosto' ? 'rosto' : key === 'f1' ? 'f1' : 'f2')).style.display = 'none';
+    };
+    img.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+/* -----------------------------------------------
+   COMPANIONS
+   ----------------------------------------------- */
+function addComp() {
+  if (compCount >= 4) return;
+  compCount++;
+  const n = compCount;
+  const list = document.getElementById('comp-list');
+  const d = document.createElement('div');
+  d.className = 'comp-block';
+  d.id = 'comp-' + n;
+  d.innerHTML = `
+    <div class="comp-hdr" onclick="toggleComp(${n})">
+      <span class="comp-hdr-title">Acompanhante ${n}</span>
+      <span id="chev-${n}" style="color:var(--orange);font-size:18px;">▲</span>
+    </div>
+    <div class="comp-body" id="cbody-${n}">
+      <div class="fg">
+        <label class="lbl">Nome Completo <span class="req">*</span></label>
+        <input type="text" id="c${n}-nome" placeholder="Nome completo">
+      </div>
+      <div class="frow fg">
+        <div>
+          <label class="lbl">Nascimento <span class="req">*</span></label>
+          <input type="date" id="c${n}-nasc">
+        </div>
+        <div>
+          <label class="lbl">CPF <span class="req">*</span></label>
+          <input type="text" id="c${n}-cpf" placeholder="000.000.000-00" maxlength="14" oninput="maskCPF(this)">
+        </div>
+      </div>
+      <div class="frow fg">
+        <div>
+          <label class="lbl">RG <span class="req">*</span></label>
+          <input type="text" id="c${n}-rg" placeholder="RG">
+        </div>
+        <div>
+          <label class="lbl">Tamanho de Camisa <span class="req">*</span></label>
+          <div class="pills" id="cpills-${n}">
+            ${['10','12','14','P','M','G','GG'].map(s =>
+              `<div class="pill" style="padding:7px 11px;font-size:12px"
+                    onclick="selCamisa(${n},'${s}',this)">${s}</div>`).join('')}
+          </div>
+          <input type="hidden" id="c${n}-cam">
+        </div>
+      </div>
+      <div class="fg">
+        <label class="lbl-opt">Email</label>
+        <input type="email" id="c${n}-email" placeholder="email@email.com">
+      </div>
+      <div class="fg">
+        <label class="lbl-opt">Instagram</label>
+        <input type="text" id="c${n}-insta" placeholder="@usuario">
+      </div>
+      <button onclick="removeComp(${n})"
+              style="background:none;border:none;color:#e05a2b;font-size:12px;cursor:pointer;margin-top:4px;font-family:inherit">
+        ✕ Remover acompanhante
+      </button>
+    </div>`;
+  list.appendChild(d);
+  if (compCount >= 4) document.getElementById('btn-add-comp').disabled = true;
+}
+
+function toggleComp(n) {
+  const b = document.getElementById('cbody-' + n);
+  const c = document.getElementById('chev-'  + n);
+  const open = b.style.display !== 'none';
+  b.style.display = open ? 'none' : 'block';
+  c.textContent   = open ? '▼' : '▲';
+}
+
+function removeComp(n) {
+  document.getElementById('comp-' + n).remove();
+  compCount--;
+  document.getElementById('btn-add-comp').disabled = false;
+}
+
+function selCamisa(n, val, el) {
+  document.querySelectorAll('#cpills-' + n + ' .pill').forEach(p => p.classList.remove('sel'));
+  el.classList.add('sel');
+  document.getElementById('c' + n + '-cam').value = val;
+}
+
+/* -----------------------------------------------
+   MASKS
+   ----------------------------------------------- */
+function maskCPF(el) {
+  let v = el.value.replace(/\D/g,'').slice(0,11);
+  v = v.replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})(\d)/,'$1.$2').replace(/(\d{3})(\d{1,2})$/,'$1-$2');
+  el.value = v;
+}
+function maskCEP(el) {
+  let v = el.value.replace(/\D/g,'').slice(0,8);
+  v = v.replace(/(\d{5})(\d)/,'$1-$2');
+  el.value = v;
+}
+
+/* -----------------------------------------------
+   SUBMIT
+   ----------------------------------------------- */
+async function submitForm() {
+  const btn = document.getElementById('btn-send');
+  btn.innerHTML = '<span class="spinner"></span>Enviando...';
+  btn.disabled  = true;
+
+  const comps = [];
+  for (let i = 1; i <= 4; i++) {
+    if (document.getElementById('c' + i + '-nome')) {
+      comps.push({
+        nome:       document.getElementById('c' + i + '-nome')?.value  || '',
+        nascimento: document.getElementById('c' + i + '-nasc')?.value  || '',
+        cpf:        document.getElementById('c' + i + '-cpf')?.value   || '',
+        rg:         document.getElementById('c' + i + '-rg')?.value    || '',
+        camisa:     document.getElementById('c' + i + '-cam')?.value   || '',
+        email:      document.getElementById('c' + i + '-email')?.value || '',
+        instagram:  document.getElementById('c' + i + '-insta')?.value || '',
+      });
+    }
+  }
+
+  const extraR1 = collectExtraQAnswers('extra-q1');
+  const extraR3 = collectExtraQAnswers('extra-q3');
+
+  const payload = {
+    torneio:    tournament.name,
+    destino:    tournament.dest,
+    ano:        tournament.year,
+    atleta: {
+      nome:          document.getElementById('a-nome').value,
+      nascimento:    document.getElementById('a-nasc').value,
+      cpf:           document.getElementById('a-cpf').value,
+      rg:            document.getElementById('a-rg').value,
+      instagram:     document.getElementById('a-insta').value,
+      uniforme:      unifVal,
+      viajaSozinho:  soloVal === 'sim' ? 'Sim' : 'Não',
+      fotoRosto:     photos.rosto,
+      fotoJogando1:  photos.f1,
+      fotoJogando2:  photos.f2,
+    },
+    acompanhantes: comps,
+    responsavel: {
+      nome:        document.getElementById('r-nome').value,
+      nascimento:  document.getElementById('r-nasc').value,
+      profissao:   document.getElementById('r-prof').value,
+      rg:          document.getElementById('r-rg').value,
+      cpf:         document.getElementById('r-cpf').value,
+      nacionalidade: document.getElementById('r-nac').value,
+      estadoCivil: document.getElementById('r-ec').value,
+      endereco:    document.getElementById('r-end').value,
+      bairro:      document.getElementById('r-bairro').value,
+      cidade:      document.getElementById('r-cidade').value,
+      cep:         document.getElementById('r-cep').value,
+      pagamento:   document.getElementById('r-pag').value,
+    },
+    perguntasExtras: { ...extraR1, ...extraR3 },
+  };
+
+  try {
+    const resp = await fetch(SCRIPT_URL, {
+      method: 'POST',
+      body:   JSON.stringify(payload),
+    });
+    const result = await resp.json();
+    if (result.status === 'ok' || resp.ok) {
+      document.getElementById('step3').style.display   = 'none';
+      document.getElementById('success').style.display = 'block';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      throw new Error(result.message || 'Erro no servidor');
+    }
+  } catch (err) {
+    alert('Erro ao enviar. Verifique sua conexão e tente novamente.\n' + err.message);
+    btn.innerHTML = 'Enviar Inscrição';
+    btn.disabled  = false;
+  }
+}
+
+/* -----------------------------------------------
+   ADMIN
+   ----------------------------------------------- */
+function openAdmin() {
+  document.getElementById('admin-overlay').classList.add('open');
+  document.getElementById('admin-lock').style.display    = 'block';
+  document.getElementById('admin-content').style.display = 'none';
+  document.getElementById('pwd').value = '';
+  document.getElementById('pwd-err').style.display = 'none';
+}
+function closeAdmin() {
+  document.getElementById('admin-overlay').classList.remove('open');
+}
+function closeAdminOut(e) {
+  if (e.target === document.getElementById('admin-overlay')) closeAdmin();
+}
+function checkPwd() {
+  if (document.getElementById('pwd').value === '0000') {
+    document.getElementById('admin-lock').style.display    = 'none';
+    document.getElementById('admin-content').style.display = 'block';
+    loadAdminData();
+  } else {
+    document.getElementById('pwd-err').style.display = 'block';
+  }
+}
+function loadAdminData() {
+  document.getElementById('adm-tname').value = tournament.name;
+  document.getElementById('adm-tdest').value = tournament.dest;
+  document.getElementById('adm-tyear').value = tournament.year;
+  renderQList();
+}
+
+/* -----------------------------------------------
+   TORNEIO
+   ----------------------------------------------- */
+function refreshTournamentDisplay() {
+  document.getElementById('disp-name').textContent = tournament.name;
+  document.getElementById('disp-dest').textContent = tournament.dest;
+  document.getElementById('disp-year').textContent = tournament.year;
+}
+
+function saveTournament() {
+  const name = document.getElementById('adm-tname').value.trim();
+  const dest = document.getElementById('adm-tdest').value.trim();
+  const year = document.getElementById('adm-tyear').value.trim();
+  if (!name || !dest || !year) { alert('Preencha todos os campos do torneio.'); return; }
+  tournament = { name, dest, year };
+  refreshTournamentDisplay();
+  saveConfig();
+  alert('✅ Torneio atualizado! Nova aba será criada automaticamente no Sheets ao receber a primeira inscrição deste torneio.');
+  closeAdmin();
+}
+
+/* -----------------------------------------------
+   PERGUNTAS EXTRAS
+   ----------------------------------------------- */
+function addQ() {
+  const label = prompt('Nome da pergunta:\n(ex: "Possui passaporte?", "Tem restrição alimentar?")');
+  if (!label || !label.trim()) return;
+  const type = confirm(
+    'Tipo de resposta:\n\n  OK = Sim / Não\n  Cancelar = Texto livre'
+  ) ? 'yesno' : 'text';
+  const required = confirm('Essa pergunta é obrigatória?');
+  const step = confirm(
+    'Em qual etapa exibir?\n\n  OK = Etapa 1 (Atleta)\n  Cancelar = Etapa 3 (Resp. Financeiro)'
+  ) ? 1 : 3;
+  customQs.push({ id: Date.now(), label: label.trim(), type, required, step });
+  saveConfig();
+  renderQList();
+  renderExtraQs();
+}
+
+function removeQ(id) {
+  if (!confirm('Remover essa pergunta do formulário?')) return;
+  customQs = customQs.filter(q => q.id !== id);
+  saveConfig();
+  renderQList();
+  renderExtraQs();
+}
+
+function renderQList() {
+  const list = document.getElementById('q-list');
+  if (!customQs.length) {
+    list.innerHTML = '<p style="font-size:12px;color:var(--text-muted);margin-bottom:14px">Nenhuma pergunta extra adicionada ainda.</p>';
+    return;
+  }
+  list.innerHTML = customQs.map(q => `
+    <div class="q-item">
+      <span class="q-text">${q.label}</span>
+      <div class="q-actions">
+        <span class="badge">Etapa ${q.step}</span>
+        <span class="badge">${q.type === 'yesno' ? 'Sim/Não' : 'texto'}</span>
+        <span class="badge">${q.required ? 'obrigatório' : 'opcional'}</span>
+        <button class="icon-btn" onclick="removeQ(${q.id})" title="Remover">✕</button>
+      </div>
+    </div>`).join('');
+}
+
+function renderExtraQs() {
+  [1,3].forEach(s => {
+    const container = document.getElementById('extra-q' + s);
+    if (!container) return;
+    const qs = customQs.filter(q => q.step === s);
+    container.innerHTML = qs.map(q => `
+      <div class="fg" id="eq-${q.id}">
+        <label class="${q.required ? 'lbl' : 'lbl-opt'}">${q.label}${q.required ? ' <span class="req">*</span>' : ''}</label>
+        ${q.type === 'yesno'
+          ? `<div class="yesno">
+               <button type="button" class="yesno-btn" id="eq-sim-${q.id}" onclick="selEQ(${q.id},'sim')">Sim</button>
+               <button type="button" class="yesno-btn" id="eq-nao-${q.id}" onclick="selEQ(${q.id},'nao')">Não</button>
+             </div>
+             <input type="hidden" id="eq-val-${q.id}">`
+          : `<input type="text" id="eq-val-${q.id}" placeholder="Sua resposta">`}
+      </div>`).join('');
+  });
+}
+
+function selEQ(id, val) {
+  document.getElementById('eq-sim-' + id).classList.toggle('sel', val === 'sim');
+  document.getElementById('eq-nao-' + id).classList.toggle('sel', val === 'nao');
+  document.getElementById('eq-val-' + id).value = val === 'sim' ? 'Sim' : 'Não';
+}
+
+function collectExtraQAnswers(containerId) {
+  const result = {};
+  const container = document.getElementById(containerId);
+  if (!container) return result;
+  customQs.forEach(q => {
+    const el = document.getElementById('eq-val-' + q.id);
+    if (el) result[q.label] = el.value;
+  });
+  return result;
+}
+
+/* -----------------------------------------------
+   PERSIST
+   ----------------------------------------------- */
+function saveConfig() {
+  localStorage.setItem('sb_cfg', JSON.stringify({ tournament, customQs }));
+}
+</script>
+</body>
+</html>
